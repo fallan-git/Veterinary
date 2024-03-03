@@ -88,6 +88,7 @@ namespace Veterinary
             {
                 MessageBox.Show("Пароли не совпадают.");
             }
+            Registration.Registration1(textBox1.Text, textBox2.Text, textBox3.Text);
         }
     }
 }

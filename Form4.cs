@@ -30,5 +30,10 @@ namespace Veterinary
             f1.Show();
             Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
