@@ -1,0 +1,16 @@
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.csproj.AssemblyReference.cache
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Properties.Resources.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.csproj.GenerateResource.cache
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.csproj.CoreCompileInputs.cache
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\Veterinary.exe.config
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\Veterinary.exe
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\Veterinary.pdb
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.exe
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.pdb
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form1.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form2.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form3.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form4.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\MySql.Data.dll
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.csproj.Up2Date
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_Admin.resources
