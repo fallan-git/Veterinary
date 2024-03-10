@@ -84,11 +84,29 @@ namespace Veterinary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox4.Text != textBox3.Text)
+            int val;
+            if (textBox4.Text == "" || textBox3.Text == "" || textBox2.Text == "" || textBox1.Text == "")
             {
-                MessageBox.Show("Пароли не совпадают.");
+                MessageBox.Show("Вы не указали все данные.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            Registration.Registration1(textBox1.Text, textBox2.Text, textBox3.Text);
+            else if (textBox4.Text != textBox3.Text)
+            {
+                MessageBox.Show("Пароли не совпадают.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (int.TryParse(textBox2.Text, out val))
+            {
+                MessageBox.Show("Номер телефона указан не правильно. Пример как его надо указать: 88005553535", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Registration.Registration1(textBox1.Text, textBox2.Text, textBox3.Text);
+                MessageBox.Show(textBox1.Text + ", вы были успешно зарегестрированны! Зайдите в свой аккаунт.", "Успешная регистрация.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                Form1 f1 = new Form1();
+                f1.Show();
+
+
+            }
         }
     }
 }

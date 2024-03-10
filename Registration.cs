@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
@@ -12,14 +13,9 @@ namespace Veterinary
 
         static public void Registration1(string login, string numberphone, string password)
         {
-            try
-            {
-                DBConnection.msCommand.CommandText = @"INSERT INTO `vet_test`.`account` (`Login`, `Password`, `Number_phone`, `id_role`) VALUES('" + login + "', '" + password + "', '" + numberphone + "', '3')";
-            }
-            catch
-            {
-
-            }
+            DBConnection.msCommand.CommandText = @"INSERT INTO `vet_test`.`account` (`Login`, `Password`, `Number_phone`, `id_role`) VALUES('" + login + "', '" + password + "', '" + numberphone + "', '3')";
+            object result = DBConnection.msCommand.ExecuteScalar();
+            
         }
     }
 }
