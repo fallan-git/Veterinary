@@ -15,7 +15,7 @@ namespace Veterinary
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"Select name_role from role, account WHERE Login = '" + login + "' and Password = '" + password + "' and account.id_role=role.id_role";
+                DBConnection.msCommand.CommandText = @"Select name_role from role, users WHERE Login = '" + login + "' and Password = '" + password + "' and users.id_role=role.id_role";
                 object result = DBConnection.msCommand.ExecuteScalar();
                 if (result != null )
                 {
@@ -39,7 +39,7 @@ namespace Veterinary
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"SELECT Familia FROM account WHERE Login = '" + login + "' ";
+                DBConnection.msCommand.CommandText = @"SELECT Familia FROM users WHERE Login = '" + login + "' ";
                 object result = DBConnection.msCommand.ExecuteScalar();
                 Number = result.ToString();
                 return Number;
