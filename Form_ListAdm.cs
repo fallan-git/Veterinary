@@ -16,5 +16,12 @@ namespace Veterinary
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form_Admin FormAdmin = new Form_Admin();
+            FormAdmin.Show();
+            Hide();
+        }
     }
 }

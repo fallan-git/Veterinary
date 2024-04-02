@@ -30,5 +30,20 @@ namespace Veterinary
             fLA.Show();
             Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_Admin_Load(object sender, EventArgs e)
+        {
+            LabelLogin.Text = Convert.ToString(Authorization.User);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
