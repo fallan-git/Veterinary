@@ -15,10 +15,6 @@ namespace Veterinary
         public Form2()
         {
             InitializeComponent();
-            textBox1.Text = "Введите логин";
-            textBox2.Text = "Номер телефона";
-            textBox3.Text = "Введите пароль";
-            textBox4.Text = "Повторите пароль";
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -59,33 +55,29 @@ namespace Veterinary
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Введите логин")
-                textBox1.Text = "";
             
         }
 
         private void textBox2_Enter(object sender, EventArgs e)
         {
-            if (textBox2.Text == "Номер телефона")
-                textBox2.Text = "";
+            
         }
 
         private void textBox3_Enter(object sender, EventArgs e)
         {
-            if (textBox3.Text == "Введите пароль")
-                textBox3.Text = "";
+            
         }
 
         private void textBox4_Enter(object sender, EventArgs e)
         {
-            if (textBox4.Text == "Повторите пароль")
-                textBox4.Text = "";
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             int val;
-            if (textBox4.Text == "" || textBox3.Text == "" || textBox2.Text == "" || textBox1.Text == "")
+            var fio = textBox5.Text + " " + textBox6.Text + " " + textBox7.Text;
+            if (textBox4.Text == "" || textBox3.Text == "" || textBox2.Text == "" || textBox1.Text == "" || textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "")
             {
                 MessageBox.Show("Вы не указали все данные.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -99,7 +91,7 @@ namespace Veterinary
             }
             else
             {
-                Registration.Registration1(textBox1.Text, textBox2.Text, textBox3.Text);
+                Registration.Registration1(textBox1.Text, textBox2.Text, textBox3.Text, fio);
                 MessageBox.Show(textBox1.Text + ", вы были успешно зарегестрированны! Зайдите в свой аккаунт.", "Успешная регистрация.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 Form1 f1 = new Form1();
