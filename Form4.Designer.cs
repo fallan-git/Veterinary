@@ -34,6 +34,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.LabelLogin = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
@@ -101,6 +103,29 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // LabelLogin
+            // 
+            this.LabelLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelLogin.AutoSize = true;
+            this.LabelLogin.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.LabelLogin.ForeColor = System.Drawing.Color.Black;
+            this.LabelLogin.Location = new System.Drawing.Point(169, 455);
+            this.LabelLogin.Name = "LabelLogin";
+            this.LabelLogin.Size = new System.Drawing.Size(0, 27);
+            this.LabelLogin.TabIndex = 28;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(12, 455);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(151, 27);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Ваш логин:";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
@@ -108,6 +133,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(784, 491);
+            this.Controls.Add(this.LabelLogin);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
@@ -120,6 +147,7 @@
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,5 +160,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label LabelLogin;
+        private System.Windows.Forms.Label label2;
     }
 }

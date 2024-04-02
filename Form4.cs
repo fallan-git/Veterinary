@@ -15,6 +15,7 @@ namespace Veterinary
         public Form4()
         {
             InitializeComponent();
+            LabelLogin.Text = Convert.ToString(Authorization.User);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -32,6 +33,11 @@ namespace Veterinary
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
         {
 
         }
