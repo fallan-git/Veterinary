@@ -27,10 +27,13 @@ namespace Veterinary
                     object id = DBConnection.msCommand.ExecuteScalar();
                     ID = Convert.ToString(id);
 
-                    DBConnection.msCommand.CommandText = @"Select name_role from role, users WHERE login = '" + login + "' and password = '" + password + "' and users.id_role=role.id_role";
+                    DBConnection.msCommand.CommandText = @"SELECT number_phone FROM users WHERE id_account = '" + ID + "';"; 
                     object number = DBConnection.msCommand.ExecuteScalar();
                     Number = Convert.ToString(number);
 
+                    DBConnection.msCommand.CommandText = @"SELECT fio FROM users WHERE id_account = '" + ID + "';";
+                    object fio = DBConnection.msCommand.ExecuteScalar();
+                    FIO = Convert.ToString(fio);
                 }
                 else
                 {

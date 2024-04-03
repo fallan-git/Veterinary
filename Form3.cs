@@ -16,6 +16,9 @@ namespace Veterinary
         {
             InitializeComponent();
             textBox1.Text = Convert.ToString(Authorization.User);
+            textBox2.Text = Convert.ToString(Authorization.Number);
+            textBox3.Text = Convert.ToString(Authorization.FIO);
+            textBox4.Text = Convert.ToString(Authorization.Password);
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
@@ -60,6 +63,11 @@ namespace Veterinary
         }
 
         private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }
