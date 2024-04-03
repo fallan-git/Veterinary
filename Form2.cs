@@ -92,11 +92,12 @@ namespace Veterinary
             else
             {
                 Registration.Registration1(textBox1.Text, textBox2.Text, textBox3.Text, fio);
-                MessageBox.Show(textBox1.Text + ", вы были успешно зарегестрированны! Зайдите в свой аккаунт.", "Успешная регистрация.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                Form1 f1 = new Form1();
-                f1.Show();
-
+                if (Registration.resulting == "true")
+                {
+                    this.Hide();
+                    Form1 f1 = new Form1();
+                    f1.Show();
+                }
 
             }
         }

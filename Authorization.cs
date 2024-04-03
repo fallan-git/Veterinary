@@ -31,22 +31,7 @@ namespace Veterinary
             catch 
             {
                 Role = User = null;
-                MessageBox.Show("Ошибка при авторизациии!!!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        static public string AuthorizationName(string login)
-        {
-            try
-            {
-                DBConnection.msCommand.CommandText = @"SELECT Familia FROM users WHERE Login = '" + login + "' ";
-                object result = DBConnection.msCommand.ExecuteScalar();
-                Number = result.ToString();
-                return Number;
-            }
-            catch 
-            {
-                return null;
+                MessageBox.Show("Ошибка при авторизациии!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

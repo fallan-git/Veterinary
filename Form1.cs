@@ -57,6 +57,17 @@ namespace Veterinary
                             fA.Show();
                             break;
                         }
+                    case "Ветеринар":
+                        {
+                            loginActive = textBox1.Text;
+                            whois = "Ветеринар";
+                            Authorization.User = textBox1.Text;
+                            MessageBox.Show(textBox1.Text + ", добро пожаловать в меню ветеринара!", "Успешный вход в панель ветеринара.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            Form_Vet fV = new Form_Vet();
+                            fV.Show();
+                            break;
+                        }
                     case "Пользователь":
                         {
                             loginActive = textBox1.Text;
