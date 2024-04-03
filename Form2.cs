@@ -92,7 +92,7 @@ namespace Veterinary
             else
             {
                 Registration.Registration1(textBox1.Text, textBox2.Text, textBox3.Text, fio);
-                if (Registration.resulting == "true")
+                if (Registration.Resulting == "true")
                 {
                     this.Hide();
                     Form1 f1 = new Form1();

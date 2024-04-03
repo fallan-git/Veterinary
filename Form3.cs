@@ -15,6 +15,7 @@ namespace Veterinary
         public Form3()
         {
             InitializeComponent();
+            textBox1.Text = Convert.ToString(Authorization.User);
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
@@ -44,6 +45,21 @@ namespace Veterinary
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
         {
 
         }
