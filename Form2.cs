@@ -75,7 +75,6 @@ namespace Veterinary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int val;
             var fio = textBox5.Text + " " + textBox6.Text + " " + textBox7.Text;
             if (textBox4.Text == "" || textBox3.Text == "" || textBox2.Text == "" || textBox1.Text == "" || textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "")
             {
@@ -84,10 +83,6 @@ namespace Veterinary
             else if (textBox4.Text != textBox3.Text)
             {
                 MessageBox.Show("Пароли не совпадают.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (int.TryParse(textBox2.Text, out val))
-            {
-                MessageBox.Show("Номер телефона указан не правильно. Пример как его надо указать: 88005553535", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -98,7 +93,6 @@ namespace Veterinary
                     Form1 f1 = new Form1();
                     f1.Show();
                 }
-
             }
         }
     }
