@@ -27,7 +27,7 @@ namespace Veterinary
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            FormLogin f1 = new FormLogin();
             f1.Show();
             Hide();
         }

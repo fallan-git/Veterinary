@@ -43,6 +43,7 @@
             this.Name = "Form_VetInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_VetInfo";
+            this.Load += new System.EventHandler(this.Form_VetInfo_Load);
             this.ResumeLayout(false);
 
         }

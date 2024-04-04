@@ -29,7 +29,7 @@ namespace Veterinary
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form1 f = new Form1();
+            FormLogin f = new FormLogin();
             f.Show();
             Hide();
         }
@@ -90,7 +90,7 @@ namespace Veterinary
                 if (Registration.Resulting == "true")
                 {
                     this.Hide();
-                    Form1 f1 = new Form1();
+                    FormLogin f1 = new FormLogin();
                     f1.Show();
                 }
             }

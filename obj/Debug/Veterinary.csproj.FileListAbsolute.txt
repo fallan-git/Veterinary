@@ -7,7 +7,6 @@ C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\Veterinary.exe
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\Veterinary.pdb
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.exe
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.pdb
-C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form1.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form2.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form3.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form4.resources
@@ -17,3 +16,4 @@ C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_Adm
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_ListAdm.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_Vet.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_VetInfo.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormLogin.resources

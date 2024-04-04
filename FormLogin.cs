@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Veterinary
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
         static public string loginActive;
         static public string whois;
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }

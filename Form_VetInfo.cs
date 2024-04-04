@@ -16,5 +16,10 @@ namespace Veterinary
         {
             InitializeComponent();
         }
+
+        private void Form_VetInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
