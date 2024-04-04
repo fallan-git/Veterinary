@@ -41,5 +41,12 @@ namespace Veterinary
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormRecords fRec = new FormRecords();
+            fRec.Show();
+            Hide();
+        }
     }
 }

@@ -17,3 +17,4 @@ C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_Lis
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_Vet.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_VetInfo.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormLogin.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormRecords.resources
