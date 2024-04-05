@@ -64,7 +64,7 @@ namespace Veterinary
                             Authorization.User = textBox1.Text;
                             MessageBox.Show(textBox1.Text + ", добро пожаловать в меню ветеринара!", "Успешный вход в панель ветеринара.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Hide();
-                            Form_Vet fV = new Form_Vet();
+                            FormVet fV = new FormVet();
                             fV.Show();
                             break;
                         }

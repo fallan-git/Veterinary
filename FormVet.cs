@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Veterinary
 {
-    public partial class Form_Vet : Form
+    public partial class FormVet : Form
     {
-        public Form_Vet()
+        public FormVet()
         {
             InitializeComponent();
             LabelLogin.Text = Convert.ToString(Authorization.User);
@@ -28,6 +28,13 @@ namespace Veterinary
         private void Form_Vet_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormVetInfo fVI = new FormVetInfo();
+            fVI.Show();
+            Hide();
         }
     }
 }

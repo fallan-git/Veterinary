@@ -40,7 +40,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label6
@@ -151,14 +150,6 @@
             this.comboBox1.Size = new System.Drawing.Size(223, 29);
             this.comboBox1.TabIndex = 49;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 292);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(523, 145);
-            this.textBox1.TabIndex = 50;
-            // 
             // FormRecords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
@@ -166,7 +157,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(784, 491);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label4);
@@ -203,6 +193,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

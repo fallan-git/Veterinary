@@ -93,17 +93,17 @@
     <Compile Include="Form_ListAdm.Designer.cs">
       <DependentUpon>Form_ListAdm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Vet.cs">
+    <Compile Include="FormVet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Vet.Designer.cs">
-      <DependentUpon>Form_Vet.cs</DependentUpon>
+    <Compile Include="FormVet.Designer.cs">
+      <DependentUpon>FormVet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_VetInfo.cs">
+    <Compile Include="FormVetInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_VetInfo.Designer.cs">
-      <DependentUpon>Form_VetInfo.cs</DependentUpon>
+    <Compile Include="FormVetInfo.Designer.cs">
+      <DependentUpon>FormVetInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,11 +130,11 @@
     <EmbeddedResource Include="Form_ListAdm.resx">
       <DependentUpon>Form_ListAdm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Vet.resx">
-      <DependentUpon>Form_Vet.cs</DependentUpon>
+    <EmbeddedResource Include="FormVet.resx">
+      <DependentUpon>FormVet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_VetInfo.resx">
-      <DependentUpon>Form_VetInfo.cs</DependentUpon>
+    <EmbeddedResource Include="FormVetInfo.resx">
+      <DependentUpon>FormVetInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

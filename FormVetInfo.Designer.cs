@@ -1,6 +1,6 @@
 ﻿namespace Veterinary
 {
-    partial class Form_VetInfo
+    partial class FormVetInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVetInfo));
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button4.Location = new System.Drawing.Point(665, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(107, 53);
+            this.button4.TabIndex = 29;
+            this.button4.Text = "Выход";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form_VetInfo
             // 
@@ -36,18 +53,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(784, 727);
+            this.ClientSize = new System.Drawing.Size(784, 491);
+            this.Controls.Add(this.button4);
             this.Font = new System.Drawing.Font("Bookman Old Style", 14.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Form_VetInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_VetInfo";
+            this.Text = "Панель ветеринара | просмотр информации о клиентах";
             this.Load += new System.EventHandler(this.Form_VetInfo_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button4;
     }
 }

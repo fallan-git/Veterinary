@@ -36,10 +36,7 @@ namespace Veterinary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DBConnection.msCommand.CommandText = @"SELECT name FROM list;";
-            object Result = DBConnection.msCommand.ExecuteScalar();
 
-            textBox1.Text = Convert.ToString(Result);
         }
     }
 }

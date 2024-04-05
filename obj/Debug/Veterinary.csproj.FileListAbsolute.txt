@@ -14,7 +14,7 @@ C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\MySql.Data.dll
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.csproj.Up2Date
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_Admin.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_ListAdm.resources
-C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_Vet.resources
-C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.Form_VetInfo.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormLogin.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormRecords.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormVetInfo.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormVet.resources

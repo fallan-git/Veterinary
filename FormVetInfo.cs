@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Veterinary
 {
-    public partial class Form_VetInfo : Form
+    public partial class FormVetInfo : Form
     {
-        public Form_VetInfo()
+        public FormVetInfo()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace Veterinary
         private void Form_VetInfo_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormVet fV = new FormVet();
+            fV.Show();
+            Hide();
         }
     }
 }
