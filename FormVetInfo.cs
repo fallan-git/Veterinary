@@ -15,6 +15,12 @@ namespace Veterinary
         public FormVetInfo()
         {
             InitializeComponent();
+            UsersAndPets.GetPets();
+            dataGridView1.DataSource = UsersAndPets.DtbPets;
+            UsersAndPets.GetUsers();
+            dataGridView2.DataSource = UsersAndPets.DtbUsers;
+            dataGridView1.Visible = false;
+            dataGridView2.Visible = false;
         }
 
         private void Form_VetInfo_Load(object sender, EventArgs e)
@@ -27,6 +33,18 @@ namespace Veterinary
             FormVet fV = new FormVet();
             fV.Show();
             Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Visible = false;
+            dataGridView2.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Visible = true;
+            dataGridView2.Visible = false;
         }
     }
 }

@@ -83,7 +83,7 @@ namespace Veterinary
             {
                 ListUpdate.DeleteList(Select);
                 ListUpdate.GetList();
-                MessageBox.Show("Статус удалён", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Услуга удалена", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

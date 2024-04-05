@@ -64,6 +64,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_service,
@@ -111,6 +112,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -191,6 +193,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label6);
@@ -285,6 +288,7 @@
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Location = new System.Drawing.Point(509, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 53);
@@ -295,6 +299,7 @@
             // 
             // button5
             // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.Location = new System.Drawing.Point(509, 71);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(150, 35);
