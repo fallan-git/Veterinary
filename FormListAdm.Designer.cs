@@ -35,6 +35,7 @@
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -49,9 +51,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -128,6 +129,16 @@
             this.groupBox1.Text = "Добавление";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(9, 196);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 34);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Добавить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(9, 137);
@@ -142,6 +153,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(166, 23);
             this.textBox3.TabIndex = 30;
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // label4
             // 
@@ -196,12 +208,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Изменение";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(9, 196);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 34);
+            this.button2.TabIndex = 31;
+            this.button2.Text = "Изменить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(9, 137);
-            this.textBox2.Multiline = true;
+            this.textBox2.Location = new System.Drawing.Point(9, 41);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 51);
+            this.textBox2.Size = new System.Drawing.Size(166, 23);
             this.textBox2.TabIndex = 34;
             // 
             // label6
@@ -219,12 +240,14 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(166, 23);
             this.textBox5.TabIndex = 36;
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(9, 41);
+            this.textBox6.Location = new System.Drawing.Point(9, 137);
+            this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(166, 23);
+            this.textBox6.Size = new System.Drawing.Size(166, 51);
             this.textBox6.TabIndex = 32;
             // 
             // label5
@@ -259,24 +282,6 @@
             this.button4.Text = "Выход";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(9, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 34);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(9, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 34);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "Изменить";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(509, 12);
@@ -286,6 +291,16 @@
             this.button3.Text = "Удалить выбранную услугу";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(509, 71);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(150, 35);
+            this.button5.TabIndex = 28;
+            this.button5.Text = "Выделить";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // FormListAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -293,6 +308,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(784, 491);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox2);
@@ -339,5 +355,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
     }
 }
