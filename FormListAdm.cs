@@ -15,13 +15,29 @@ namespace Veterinary
         public FormListAdm()
         {
             InitializeComponent();
+
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             FormAdm fA = new FormAdm();
             fA.Show();
             Hide();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormListAdm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
