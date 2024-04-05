@@ -14,7 +14,7 @@ namespace Veterinary
         {
             DBConnection.msCommand.CommandText = @"SELECT id_account FROM users WHERE login = '" + Login + "';";
             object Result = DBConnection.msCommand.ExecuteScalar();
-            if (Result != null)
+            if (Convert.ToString(Result) != Authorization.ID)
             {
                 MessageBox.Show("Данный логин уже существует, выберите другой!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

@@ -20,7 +20,7 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormСabinet f3 = new FormСabinet();
+            FormCabinet f3 = new FormCabinet();
             f3.Show();
             Hide();
         }
@@ -40,6 +40,13 @@ namespace Veterinary
         private void Form4_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormRecords fRec = new FormRecords();
+            fRec.Show();
+            Hide();
         }
     }
 }

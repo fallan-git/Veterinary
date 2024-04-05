@@ -1,6 +1,6 @@
 ﻿namespace Veterinary
 {
-    partial class Form_ListAdm
+    partial class FormListAdm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ListAdm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListAdm));
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 

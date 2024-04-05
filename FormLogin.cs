@@ -53,7 +53,7 @@ namespace Veterinary
                             Authorization.User = textBox1.Text;
                             MessageBox.Show(textBox1.Text + ", добро пожаловать в меню администратора!", "Успешный вход в панель администратора.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Hide();
-                            Form_Admin fA = new Form_Admin();
+                            FormAdm fA = new FormAdm();
                             fA.Show();
                             break;
                         }
@@ -75,7 +75,7 @@ namespace Veterinary
                             Authorization.User = textBox1.Text;
                             MessageBox.Show(textBox1.Text + ", добро пожаловать в меню пользователя!", "Успешный вход в меню.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Hide();
-                            Form4 f4 = new Form4();
+                            FormMenu f4 = new FormMenu();
                             f4.Show();
                             break;
                         }
@@ -90,7 +90,7 @@ namespace Veterinary
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 f = new Form2();
+            FormRegister f = new FormRegister();
             f.Show();
             this.Hide();
         }

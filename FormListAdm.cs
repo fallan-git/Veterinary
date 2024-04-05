@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Veterinary
 {
-    public partial class Form_ListAdm : Form
+    public partial class FormListAdm : Form
     {
-        public Form_ListAdm()
+        public FormListAdm()
         {
             InitializeComponent();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form_Admin FormAdmin = new Form_Admin();
-            FormAdmin.Show();
+            FormAdm fA = new FormAdm();
+            fA.Show();
             Hide();
         }
     }
