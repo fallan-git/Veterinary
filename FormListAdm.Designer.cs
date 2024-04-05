@@ -281,6 +281,7 @@
             this.button4.TabIndex = 26;
             this.button4.Text = "Выход";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -290,6 +291,7 @@
             this.button3.TabIndex = 27;
             this.button3.Text = "Удалить выбранную услугу";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 

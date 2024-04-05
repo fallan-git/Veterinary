@@ -21,13 +21,6 @@ namespace Veterinary
             dataGridView1.DataSource = ListUpdate.DtbList;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FormAdm fA = new FormAdm();
-            fA.Show();
-            Hide();
-        }
-
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -38,10 +31,6 @@ namespace Veterinary
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -79,6 +68,25 @@ namespace Veterinary
             }
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormAdm fA = new FormAdm();
+            fA.Show();
+            Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string Select = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данную услугу?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Del == DialogResult.Yes)
+            {
+                ListUpdate.DeleteList(Select);
+                ListUpdate.GetList();
+                MessageBox.Show("Статус удалён", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
@@ -95,9 +103,11 @@ namespace Veterinary
             {
                 if (textBox2.Text != "" && textBox5.Text != "" && textBox6.Text != "")
                 {
-                    ListUpdate.EditList(EditNum, textBox2.Text, textBox5.Text, textBox6.Text);
-                    MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ListUpdate.GetList();
+                    if (ListUpdate.EditList(EditNum, textBox2.Text, textBox5.Text, textBox6.Text))
+                    {
+                        MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ListUpdate.GetList();
+                    }
                 }
                 else
                 {
@@ -118,9 +128,11 @@ namespace Veterinary
                 {
                     if (textBox2.Text != "" && textBox5.Text != "" && textBox6.Text != "")
                     {
-                        ListUpdate.EditList(EditNum, textBox2.Text, textBox5.Text, textBox6.Text);
-                        MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ListUpdate.GetList();
+                        if (ListUpdate.EditList(EditNum, textBox2.Text, textBox5.Text, textBox6.Text))
+                        {
+                            MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ListUpdate.GetList();
+                        }
                     }
                     else
                     {
