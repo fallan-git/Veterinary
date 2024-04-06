@@ -18,3 +18,4 @@ C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormList
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormRegister.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormCabinet.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormMenu.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserList.resources

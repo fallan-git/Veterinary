@@ -34,7 +34,9 @@ namespace Veterinary
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            FormUserList UsrList = new FormUserList();
+            UsrList.Show();
+            Hide();
         }
 
         private void Form4_Load(object sender, EventArgs e)

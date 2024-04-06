@@ -48,7 +48,7 @@ namespace Veterinary
             }
             else
             {
-                UppdateProfile.UppdateProfile1(textBox1.Text, textBox2.Text, textBox4.Text, textBox3.Text);
+                UsersFunctions.UppdateProfile(textBox1.Text, textBox2.Text, textBox4.Text, textBox3.Text);
                 Authorization.Authorization1(textBox1.Text, textBox4.Text);
             }
             
