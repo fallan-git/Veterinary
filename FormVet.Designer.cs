@@ -73,6 +73,7 @@
             this.button2.TabIndex = 31;
             this.button2.Text = "Просмотр записей на приём";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -115,7 +116,7 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Панель ветеринара";
             // 
-            // Form_Vet
+            // FormVet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +133,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "Form_Vet";
+            this.Name = "FormVet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Панель ветеринара";
             this.Load += new System.EventHandler(this.Form_Vet_Load);

@@ -11,10 +11,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Veterinary
 {
-    public partial class FormListAdm : Form
+    public partial class FormAdmList : Form
     {
         static public string EditNum, EditName, EditPrice, EditDesc;
-        public FormListAdm()
+        public FormAdmList()
         {
             InitializeComponent();
             ListUpdate.GetList();

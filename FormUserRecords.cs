@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Veterinary
 {
-    public partial class FormRecords : Form
+    public partial class FormUserRecords : Form
     {
-        public FormRecords()
+        public FormUserRecords()
         {
             InitializeComponent();
             DateTime DateNow = DateTime.Now;
@@ -24,7 +24,7 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormMenu main = new FormMenu();
+            FormUserMenu main = new FormUserMenu();
             main.Show();
             Hide();
         }

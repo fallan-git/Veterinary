@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Veterinary
 {
-    public partial class FormCabinet : Form
+    public partial class FormUserCabinet : Form
     {
-        public FormCabinet()
+        public FormUserCabinet()
         {
             InitializeComponent();
             textBox1.Text = Convert.ToString(Authorization.User);
@@ -56,7 +56,7 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormMenu main = new FormMenu();
+            FormUserMenu main = new FormUserMenu();
             main.Show();
             Hide();
         }

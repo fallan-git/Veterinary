@@ -10,12 +10,13 @@ C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.pdb
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\MySql.Data.dll
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.csproj.Up2Date
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormLogin.resources
-C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormRecords.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormVetInfo.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormVet.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdm.resources
-C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormListAdm.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormRegister.resources
-C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormCabinet.resources
-C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormMenu.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserList.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserCabinet.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserMenu.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserRecords.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmList.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormVetRecords.resources

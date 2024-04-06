@@ -15,10 +15,10 @@ namespace Veterinary
         public FormVetInfo()
         {
             InitializeComponent();
-            UsersAndPets.GetPets();
-            dataGridView1.DataSource = UsersAndPets.DtbPets;
-            UsersAndPets.GetUsers();
-            dataGridView2.DataSource = UsersAndPets.DtbUsers;
+            VetFunctions.GetPets();
+            dataGridView1.DataSource = VetFunctions.DtbPets;
+            VetFunctions.GetUsers();
+            dataGridView2.DataSource = VetFunctions.DtbUsers;
             dataGridView1.Visible = false;
             dataGridView2.Visible = false;
         }

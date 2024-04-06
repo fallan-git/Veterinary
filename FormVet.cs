@@ -32,8 +32,15 @@ namespace Veterinary
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormVetInfo fVI = new FormVetInfo();
-            fVI.Show();
+            FormVetInfo FVI = new FormVetInfo();
+            FVI.Show();
+            Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormVetRecords FVR = new FormVetRecords();
+            FVR.Show();
             Hide();
         }
     }

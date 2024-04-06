@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Veterinary
 {
-    public partial class FormMenu : Form
+    public partial class FormUserMenu : Form
     {
-        public FormMenu()
+        public FormUserMenu()
         {
             InitializeComponent();
             LabelLogin.Text = Convert.ToString(Authorization.User);
@@ -20,7 +20,7 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormCabinet f3 = new FormCabinet();
+            FormUserCabinet f3 = new FormUserCabinet();
             f3.Show();
             Hide();
         }
@@ -46,7 +46,7 @@ namespace Veterinary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormRecords fRec = new FormRecords();
+            FormUserRecords fRec = new FormUserRecords();
             fRec.Show();
             Hide();
         }

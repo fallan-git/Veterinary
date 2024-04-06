@@ -26,14 +26,14 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormMenu main = new FormMenu();
+            FormUserMenu main = new FormUserMenu();
             main.Show();
             Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormRecords Records = new FormRecords();
+            FormUserRecords Records = new FormUserRecords();
             Records.Show();
             Hide();
         }
