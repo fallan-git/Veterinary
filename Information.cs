@@ -11,7 +11,7 @@ namespace Veterinary
     internal class Information
     {
         static public DataTable DtbInformation = new DataTable();
-        static public void GetRecords()
+        static public void GetInfo()
         {
             try
             {

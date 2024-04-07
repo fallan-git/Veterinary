@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|c:\\users\\leonid\\source\\repos\\veterinary\\veterinary\\formadmlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|solutionrelative:veterinary\\formadmlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|c:\\users\\leonid\\source\\repos\\veterinary\\veterinary\\formadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|solutionrelative:veterinary\\formadm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|c:\\users\\leonid\\source\\repos\\veterinary\\veterinary\\formadminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|solutionrelative:veterinary\\formadminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|c:\\users\\leonid\\source\\repos\\veterinary\\veterinary\\formadminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|solutionrelative:veterinary\\formadminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|c:\\users\\leonid\\source\\repos\\veterinary\\veterinary\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A974E5-1EE2-4EDF-AB14-E50BAA2E5ADA}|Veterinary\\Veterinary.csproj|solutionrelative:veterinary\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Information.cs",
+              "DocumentMoniker": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\Information.cs",
+              "RelativeDocumentMoniker": "Veterinary\\Information.cs",
+              "ToolTip": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\Information.cs",
+              "RelativeToolTip": "Veterinary\\Information.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T08:31:25.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormAdmInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\FormAdmInfo.cs",
+              "RelativeDocumentMoniker": "Veterinary\\FormAdmInfo.cs",
+              "ToolTip": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\FormAdmInfo.cs",
+              "RelativeToolTip": "Veterinary\\FormAdmInfo.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAawDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T09:26:33.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormAdmInfo.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\FormAdmInfo.cs",
+              "RelativeDocumentMoniker": "Veterinary\\FormAdmInfo.cs",
+              "ToolTip": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\FormAdmInfo.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Veterinary\\FormAdmInfo.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T07:14:46.527Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormAdm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\FormAdm.cs",
+              "RelativeDocumentMoniker": "Veterinary\\FormAdm.cs",
+              "ToolTip": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\FormAdm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Veterinary\\FormAdm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T07:10:02.429Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormAdmList.cs",
+              "DocumentMoniker": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\FormAdmList.cs",
+              "RelativeDocumentMoniker": "Veterinary\\FormAdmList.cs",
+              "ToolTip": "C:\\Users\\Leonid\\source\\repos\\Veterinary\\Veterinary\\FormAdmList.cs",
+              "RelativeToolTip": "Veterinary\\FormAdmList.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAwIcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T07:02:10.5Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
