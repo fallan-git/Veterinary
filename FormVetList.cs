@@ -15,8 +15,8 @@ namespace Veterinary
         public FormVetList()
         {
             InitializeComponent();
-            ListUpdate.GetList();
-            dataGridView1.DataSource = ListUpdate.DtbList;
+            List.GetList();
+            dataGridView1.DataSource = List.DtbList;
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -8,37 +8,35 @@ using System.Windows.Forms;
 
 namespace Veterinary
 {
-    internal class ListUpdate
+    internal class Records
     {
-        static public DataTable DtbList = new DataTable();
-
-        static public void GetList()
+        static public DataTable DtbRecords = new DataTable();
+        static public void GetRecords()
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"SELECT * FROM list;";
-                DtbList.Clear();
+                DBConnection.msCommand.CommandText = @"SELECT * FROM records;";
+                DtbRecords.Clear();
                 DBConnection.msDataAdapter.SelectCommand = DBConnection.msCommand;
-                DBConnection.msDataAdapter.Fill(DtbList);
-
+                DBConnection.msDataAdapter.Fill(DtbRecords);
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Ошибка получения данных.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        static public bool AddList(string Name, string Price, string Description)
+        static public bool AddRecords(string Name, string Price, string Description)
         {
             try
             {
                 DBConnection.msCommand.CommandText = @"INSERT INTO `list` (`name`, `price`, `description`) VALUES ('" + Name + "', '" + Price + "', '" + Description + "');";
-                if(DBConnection.msCommand.ExecuteNonQuery() > 0)
+                if (DBConnection.msCommand.ExecuteNonQuery() > 0)
                 {
                     return true;
                 }
-                else 
-                { 
-                    return false; 
+                else
+                {
+                    return false;
                 }
             }
             catch
@@ -48,7 +46,7 @@ namespace Veterinary
             }
         }
 
-        static public bool EditList(string IdService, string Name, string Price, string Description)
+        static public bool EditRecords(string IdService, string Name, string Price, string Description)
         {
             try
             {
@@ -68,18 +66,17 @@ namespace Veterinary
                 return false;
             }
         }
-        static public void DeleteList(string IdService)
+        static public void DeleteRecords(string IdService)
         {
             try
             {
                 DBConnection.msCommand.CommandText = @"DELETE FROM `list` WHERE (`id_service` = '" + IdService + "');";
                 DBConnection.msCommand.ExecuteNonQuery();
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Ошибка удаления данных.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
     }
 }

@@ -129,12 +129,18 @@
     <Compile Include="FormVetRecords.Designer.cs">
       <DependentUpon>FormVetRecords.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListUpdate.cs" />
+    <Compile Include="Information.cs" />
+    <Compile Include="List.cs" />
+    <Compile Include="Pets.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Records.cs" />
     <Compile Include="Registration.cs" />
+    <Compile Include="Users.cs" />
     <Compile Include="UsersFunctions.cs" />
-    <Compile Include="VetFunctions.cs" />
+    <EmbeddedResource Include="FormAdmInfo.resx">
+      <DependentUpon>FormAdmInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>

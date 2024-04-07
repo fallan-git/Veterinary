@@ -42,8 +42,15 @@
             this.id_account = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.number_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.id_account2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fio2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.number_phone2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
@@ -185,6 +192,69 @@
             this.number_phone.ReadOnly = true;
             this.number_phone.Width = 150;
             // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.Location = new System.Drawing.Point(667, 186);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(112, 52);
+            this.button3.TabIndex = 34;
+            this.button3.Text = "Пользователи с питомцами";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AllowUserToResizeColumns = false;
+            this.dataGridView3.AllowUserToResizeRows = false;
+            this.dataGridView3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_account2,
+            this.fio2,
+            this.number_phone2,
+            this.name2});
+            this.dataGridView3.Location = new System.Drawing.Point(10, 12);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(650, 467);
+            this.dataGridView3.TabIndex = 35;
+            // 
+            // id_account2
+            // 
+            this.id_account2.DataPropertyName = "id_account";
+            this.id_account2.HeaderText = "ID";
+            this.id_account2.Name = "id_account2";
+            this.id_account2.ReadOnly = true;
+            this.id_account2.Width = 40;
+            // 
+            // fio2
+            // 
+            this.fio2.DataPropertyName = "fio";
+            this.fio2.HeaderText = "ФИО";
+            this.fio2.Name = "fio2";
+            this.fio2.ReadOnly = true;
+            this.fio2.Width = 250;
+            // 
+            // number_phone2
+            // 
+            this.number_phone2.DataPropertyName = "number_phone";
+            this.number_phone2.HeaderText = "Номер телефона";
+            this.number_phone2.Name = "number_phone2";
+            this.number_phone2.ReadOnly = true;
+            this.number_phone2.Width = 150;
+            // 
+            // name2
+            // 
+            this.name2.DataPropertyName = "name";
+            this.name2.HeaderText = "Имя питомца";
+            this.name2.Name = "name2";
+            this.name2.ReadOnly = true;
+            this.name2.Width = 167;
+            // 
             // FormVetInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -192,6 +262,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(784, 491);
+            this.Controls.Add(this.dataGridView3);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -207,6 +279,7 @@
             this.Load += new System.EventHandler(this.Form_VetInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -226,5 +299,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id_account;
         private System.Windows.Forms.DataGridViewTextBoxColumn fio;
         private System.Windows.Forms.DataGridViewTextBoxColumn number_phone;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_account2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fio2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn number_phone2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name2;
     }
 }

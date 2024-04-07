@@ -36,6 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.LabelLogin = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +58,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(665, 264);
+            this.button4.Location = new System.Drawing.Point(665, 346);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 53);
             this.button4.TabIndex = 21;
@@ -102,7 +103,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(595, 182);
+            this.button2.Location = new System.Drawing.Point(595, 264);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(177, 76);
             this.button2.TabIndex = 24;
@@ -132,12 +133,27 @@
             this.LabelLogin.Size = new System.Drawing.Size(0, 27);
             this.LabelLogin.TabIndex = 26;
             // 
-            // Form_Admin
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.BackColor = System.Drawing.Color.Magenta;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button5.Location = new System.Drawing.Point(595, 182);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(177, 76);
+            this.button5.TabIndex = 27;
+            this.button5.Text = "Редактировать информаию о поликлинике";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // FormAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(784, 491);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.LabelLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
@@ -149,7 +165,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "Form_Admin";
+            this.Name = "FormAdm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Панель администратора";
             this.Load += new System.EventHandler(this.Form_Admin_Load);
@@ -167,5 +183,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LabelLogin;
+        private System.Windows.Forms.Button button5;
     }
 }

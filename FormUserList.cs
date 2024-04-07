@@ -15,8 +15,8 @@ namespace Veterinary
         public FormUserList()
         {
             InitializeComponent();
-            ListUpdate.GetList();
-            dataGridView1.DataSource = ListUpdate.DtbList;
+            List.GetList();
+            dataGridView1.DataSource = List.DtbList;
         }
 
         private void FormUserList_Load(object sender, EventArgs e)

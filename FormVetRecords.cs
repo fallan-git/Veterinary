@@ -15,8 +15,8 @@ namespace Veterinary
         public FormVetRecords()
         {
             InitializeComponent();
-            VetFunctions.GetRecords();
-            dataGridView2.DataSource = VetFunctions.DtbRecords;
+            Records.GetRecords();
+            dataGridView2.DataSource = Records.DtbRecords;
         }
 
         private void button4_Click(object sender, EventArgs e)
