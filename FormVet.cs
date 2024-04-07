@@ -20,8 +20,8 @@ namespace Veterinary
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormLogin f1 = new FormLogin();
-            f1.Show();
+            FormLogin FL = new FormLogin();
+            FL.Show();
             Hide();
         }
 
@@ -41,6 +41,13 @@ namespace Veterinary
         {
             FormVetRecords FVR = new FormVetRecords();
             FVR.Show();
+            Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormVetList FVL = new FormVetList();
+            FVL.Show();
             Hide();
         }
     }

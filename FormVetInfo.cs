@@ -30,8 +30,8 @@ namespace Veterinary
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormVet fV = new FormVet();
-            fV.Show();
+            FormVet FV = new FormVet();
+            FV.Show();
             Hide();
         }
 

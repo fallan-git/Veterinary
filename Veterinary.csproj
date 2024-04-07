@@ -51,6 +51,12 @@
   <ItemGroup>
     <Compile Include="Authorization.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="FormAdmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmInfo.Designer.cs">
+      <DependentUpon>FormAdmInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     <Compile Include="FormVetInfo.Designer.cs">
       <DependentUpon>FormVetInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVetList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVetList.Designer.cs">
+      <DependentUpon>FormVetList.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVetRecords.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormVetInfo.resx">
       <DependentUpon>FormVetInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVetList.resx">
+      <DependentUpon>FormVetList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVetRecords.resx">
       <DependentUpon>FormVetRecords.cs</DependentUpon>

@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Veterinary
 {
-    public partial class FormVetRecords : Form
+    public partial class FormVetList : Form
     {
-        public FormVetRecords()
+        public FormVetList()
         {
             InitializeComponent();
-            VetFunctions.GetRecords();
-            dataGridView2.DataSource = VetFunctions.DtbRecords;
+            ListUpdate.GetList();
+            dataGridView1.DataSource = ListUpdate.DtbList;
         }
 
         private void button4_Click(object sender, EventArgs e)

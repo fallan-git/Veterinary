@@ -35,6 +35,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LabelLogin
@@ -97,7 +98,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(668, 215);
+            this.button4.Location = new System.Drawing.Point(668, 276);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 53);
             this.button4.TabIndex = 28;
@@ -116,6 +117,21 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Панель ветеринара";
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(598, 215);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 55);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "Просмотр услуг";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormVet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
@@ -123,6 +139,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(784, 491);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.LabelLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
@@ -150,5 +167,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

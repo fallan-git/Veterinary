@@ -20,3 +20,4 @@ C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUser
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserRecords.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmList.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormVetRecords.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormVetList.resources
