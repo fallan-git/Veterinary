@@ -105,7 +105,7 @@ namespace Veterinary
                 {
                     if (List.EditList(EditNum, textBox2.Text, textBox5.Text, textBox6.Text))
                     {
-                        MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Услуга успешно изменена!", "Изменение.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         List.GetList();
                     }
                 }
@@ -130,7 +130,7 @@ namespace Veterinary
                     {
                         if (List.EditList(EditNum, textBox2.Text, textBox5.Text, textBox6.Text))
                         {
-                            MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Услуга успешно изменена!", "Изменение.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             List.GetList();
                         }
                     }

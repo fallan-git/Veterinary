@@ -63,7 +63,7 @@ namespace Veterinary
                 {
                     if (Information.EditInfo(EditId, textBox2.Text, textBox4.Text))
                     {
-                        MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Услуга успешно изменена!", "Изменение.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Information.GetInfo();
                     }
                 }
@@ -88,7 +88,7 @@ namespace Veterinary
                     {
                         if (Information.EditInfo(EditId, textBox2.Text, textBox4.Text))
                         {
-                            MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Услуга успешно изменена!", "Изменение.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Information.GetInfo();
                         }
                     }
