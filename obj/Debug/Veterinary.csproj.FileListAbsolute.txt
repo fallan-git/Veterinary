@@ -49,3 +49,4 @@ C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmUsers.r
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\System.Memory.dll
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmInfo.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmUsers.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmVet.resources

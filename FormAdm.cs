@@ -54,5 +54,12 @@ namespace Veterinary
             FAU.Show();
             Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FormAdmVet FAV = new FormAdmVet();
+            FAV.Show();
+            Hide();
+        }
     }
 }

@@ -31,19 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVetInfo));
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.id_account = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.number_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_pet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_user = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.disease = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.id_account = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.number_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.id_account2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fio2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.number_phone2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -91,6 +91,44 @@
             this.dataGridView1.Size = new System.Drawing.Size(650, 467);
             this.dataGridView1.TabIndex = 30;
             // 
+            // id_pet
+            // 
+            this.id_pet.DataPropertyName = "id_pet";
+            this.id_pet.HeaderText = "ID";
+            this.id_pet.Name = "id_pet";
+            this.id_pet.ReadOnly = true;
+            this.id_pet.Width = 40;
+            // 
+            // id_user
+            // 
+            this.id_user.DataPropertyName = "id_user";
+            this.id_user.HeaderText = "ID хозяина";
+            this.id_user.Name = "id_user";
+            this.id_user.ReadOnly = true;
+            // 
+            // date
+            // 
+            this.date.DataPropertyName = "date";
+            this.date.HeaderText = "Дата рождения";
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "Имя";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 140;
+            // 
+            // disease
+            // 
+            this.disease.DataPropertyName = "disease";
+            this.disease.HeaderText = "Болезни";
+            this.disease.Name = "disease";
+            this.disease.ReadOnly = true;
+            this.disease.Width = 267;
+            // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -134,6 +172,30 @@
             this.dataGridView2.TabIndex = 33;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
+            // id_account
+            // 
+            this.id_account.DataPropertyName = "id_account";
+            this.id_account.HeaderText = "ID";
+            this.id_account.Name = "id_account";
+            this.id_account.ReadOnly = true;
+            this.id_account.Width = 40;
+            // 
+            // fio
+            // 
+            this.fio.DataPropertyName = "fio";
+            this.fio.HeaderText = "ФИО";
+            this.fio.Name = "fio";
+            this.fio.ReadOnly = true;
+            this.fio.Width = 457;
+            // 
+            // number_phone
+            // 
+            this.number_phone.DataPropertyName = "number_phone";
+            this.number_phone.HeaderText = "Номер телефона";
+            this.number_phone.Name = "number_phone";
+            this.number_phone.ReadOnly = true;
+            this.number_phone.Width = 150;
+            // 
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -165,68 +227,6 @@
             this.dataGridView3.RowHeadersVisible = false;
             this.dataGridView3.Size = new System.Drawing.Size(650, 467);
             this.dataGridView3.TabIndex = 35;
-            // 
-            // id_account
-            // 
-            this.id_account.DataPropertyName = "id_account";
-            this.id_account.HeaderText = "ID";
-            this.id_account.Name = "id_account";
-            this.id_account.ReadOnly = true;
-            this.id_account.Width = 40;
-            // 
-            // fio
-            // 
-            this.fio.DataPropertyName = "fio";
-            this.fio.HeaderText = "ФИО";
-            this.fio.Name = "fio";
-            this.fio.ReadOnly = true;
-            this.fio.Width = 457;
-            // 
-            // number_phone
-            // 
-            this.number_phone.DataPropertyName = "number_phone";
-            this.number_phone.HeaderText = "Номер телефона";
-            this.number_phone.Name = "number_phone";
-            this.number_phone.ReadOnly = true;
-            this.number_phone.Width = 150;
-            // 
-            // id_pet
-            // 
-            this.id_pet.DataPropertyName = "id_pet";
-            this.id_pet.HeaderText = "ID";
-            this.id_pet.Name = "id_pet";
-            this.id_pet.ReadOnly = true;
-            this.id_pet.Width = 40;
-            // 
-            // id_user
-            // 
-            this.id_user.DataPropertyName = "id_user";
-            this.id_user.HeaderText = "ID хозяина";
-            this.id_user.Name = "id_user";
-            this.id_user.ReadOnly = true;
-            // 
-            // date
-            // 
-            this.date.DataPropertyName = "date";
-            this.date.HeaderText = "Дата рождения";
-            this.date.Name = "date";
-            this.date.ReadOnly = true;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "Имя";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            this.name.Width = 140;
-            // 
-            // disease
-            // 
-            this.disease.DataPropertyName = "disease";
-            this.disease.HeaderText = "Болезни";
-            this.disease.Name = "disease";
-            this.disease.ReadOnly = true;
-            this.disease.Width = 267;
             // 
             // id_account2
             // 
