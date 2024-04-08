@@ -59,5 +59,10 @@ namespace Veterinary
             dataGridView3.Visible = true;
 
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

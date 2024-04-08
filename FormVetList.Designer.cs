@@ -71,6 +71,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(646, 467);
             this.dataGridView1.TabIndex = 31;
             // 
@@ -104,7 +105,7 @@
             this.description.HeaderText = "Описание";
             this.description.Name = "description";
             this.description.ReadOnly = true;
-            this.description.Width = 393;
+            this.description.Width = 433;
             // 
             // FormVetList
             // 
@@ -118,7 +119,7 @@
             this.Font = new System.Drawing.Font("Bookman Old Style", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormVetList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Панель ветеринара | просмотр услуг";

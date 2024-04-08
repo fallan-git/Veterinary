@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LabelLogin = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +59,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(665, 346);
+            this.button4.Location = new System.Drawing.Point(665, 428);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 53);
             this.button4.TabIndex = 21;
@@ -103,7 +104,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(595, 264);
+            this.button2.Location = new System.Drawing.Point(595, 346);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(177, 76);
             this.button2.TabIndex = 24;
@@ -144,8 +145,23 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(177, 76);
             this.button5.TabIndex = 27;
-            this.button5.Text = "Редактировать информаию о поликлинике";
+            this.button5.Text = "Редактировать данные пользователей";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button6.BackColor = System.Drawing.Color.Orange;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button6.Location = new System.Drawing.Point(595, 264);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(177, 76);
+            this.button6.TabIndex = 28;
+            this.button6.Text = "Редактировать данные питомцев";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // FormAdm
             // 
@@ -153,6 +169,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(784, 491);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.LabelLogin);
             this.Controls.Add(this.label2);
@@ -184,5 +201,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LabelLogin;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

@@ -57,6 +57,12 @@
     <Compile Include="FormAdmInfo.Designer.cs">
       <DependentUpon>FormAdmInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmUsers.Designer.cs">
+      <DependentUpon>FormAdmUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     <Compile Include="UsersFunctions.cs" />
     <EmbeddedResource Include="FormAdmInfo.resx">
       <DependentUpon>FormAdmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmUsers.resx">
+      <DependentUpon>FormAdmUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

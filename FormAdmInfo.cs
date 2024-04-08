@@ -30,7 +30,7 @@ namespace Veterinary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "")
+            if (textBox1.Text != "" && textBox3.Text != "")
             {
                 string Sql = @"SELECT `id_info` FROM `information` WHERE `title` = '" + textBox1.Text + "'";
                 DBConnection.msCommand.CommandText = Sql;
@@ -42,7 +42,7 @@ namespace Veterinary
                 }
                 else
                 {
-                    if (Information.AddInfo(textBox1.Text, textBox2.Text))
+                    if (Information.AddInfo(textBox1.Text, textBox3.Text))
                     {
                         MessageBox.Show("Информация успешно добавлена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Information.GetInfo();
@@ -57,7 +57,47 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (textBox2.Text == EditTitle)
+            {
+                if (textBox2.Text != "" && textBox4.Text != "")
+                {
+                    if (Information.EditInfo(EditId, textBox2.Text, textBox4.Text))
+                    {
+                        MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Information.GetInfo();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Заполните все данные!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                string Sql = @"SELECT `id_info` FROM `information` WHERE `title` = '" + textBox2.Text + "'";
+                DBConnection.msCommand.CommandText = Sql;
+                object Result = DBConnection.msCommand.ExecuteScalar();
+                if (Result != null)
+                {
+                    MessageBox.Show("Услуга с таким названием уже существует!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox2.Text = "";
+                }
+                else
+                {
+                    if (textBox2.Text != "" && textBox4.Text != "")
+                    {
+                        if (Information.EditInfo(EditId, textBox2.Text, textBox4.Text))
+                        {
+                            MessageBox.Show("Услуга успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Information.GetInfo();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Заполните все данные!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

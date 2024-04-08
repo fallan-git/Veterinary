@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVetRecords));
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
             this.id_record = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_users = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_pet = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,7 +38,6 @@
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veterinarian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,8 +61,25 @@
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.Size = new System.Drawing.Size(650, 467);
             this.dataGridView2.TabIndex = 34;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button4.Location = new System.Drawing.Point(663, 12);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(112, 52);
+            this.button4.TabIndex = 35;
+            this.button4.Text = "Выход";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // id_record
             // 
@@ -116,23 +133,7 @@
             this.veterinarian.HeaderText = "Ветеринар";
             this.veterinarian.Name = "veterinarian";
             this.veterinarian.ReadOnly = true;
-            this.veterinarian.Width = 200;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(663, 12);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 52);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "Выход";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.veterinarian.Width = 240;
             // 
             // FormVetRecords
             // 
@@ -158,6 +159,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_record;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_users;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_pet;
@@ -165,6 +167,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewTextBoxColumn time;
         private System.Windows.Forms.DataGridViewTextBoxColumn veterinarian;
-        private System.Windows.Forms.Button button4;
     }
 }

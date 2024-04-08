@@ -19,21 +19,23 @@ namespace Veterinary
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormLogin f1 = new FormLogin();
-            f1.Show();
+            FormLogin FL = new FormLogin();
+            FL.Show();
             Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormAdmList fLA = new FormAdmList();
-            fLA.Show();
+            FormAdmList FAL = new FormAdmList();
+            FAL.Show();
             Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FormAdmInfo FAI = new FormAdmInfo();
+            FAI.Show();
+            Hide();
         }
 
         private void Form_Admin_Load(object sender, EventArgs e)
@@ -44,6 +46,13 @@ namespace Veterinary
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormAdmUsers FAU = new FormAdmUsers();
+            FAU.Show();
+            Hide();
         }
     }
 }
