@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Veterinary
 {
-    public partial class FormUserMenu : Form
+    public partial class FormUser : Form
     {
-        public FormUserMenu()
+        public FormUser()
         {
             InitializeComponent();
             LabelLogin.Text = Convert.ToString(Authorization.User);

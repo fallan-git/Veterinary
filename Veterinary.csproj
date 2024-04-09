@@ -93,11 +93,11 @@
     <Compile Include="FormUserCabinet.Designer.cs">
       <DependentUpon>FormUserCabinet.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUserMenu.cs">
+    <Compile Include="FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUserMenu.Designer.cs">
-      <DependentUpon>FormUserMenu.cs</DependentUpon>
+    <Compile Include="FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUserRecords.cs">
       <SubType>Form</SubType>
@@ -177,8 +177,8 @@
     <EmbeddedResource Include="FormUserCabinet.resx">
       <DependentUpon>FormUserCabinet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUserMenu.resx">
-      <DependentUpon>FormUserMenu.cs</DependentUpon>
+    <EmbeddedResource Include="FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUserRecords.resx">
       <DependentUpon>FormUserRecords.cs</DependentUpon>

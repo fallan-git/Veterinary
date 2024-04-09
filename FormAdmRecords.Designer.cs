@@ -33,7 +33,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -43,6 +47,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -60,14 +68,6 @@
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veterinarian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -75,6 +75,7 @@
             // 
             // button5
             // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.Location = new System.Drawing.Point(509, 71);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(150, 35);
@@ -85,6 +86,7 @@
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Location = new System.Drawing.Point(509, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 53);
@@ -95,6 +97,7 @@
             // 
             // button4
             // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -109,6 +112,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label10);
@@ -132,6 +136,32 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Изменение";
             // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(9, 281);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(166, 46);
+            this.textBox8.TabIndex = 41;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(5, 259);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(194, 19);
+            this.label12.TabIndex = 40;
+            this.label12.Text = "Введите ФИО ветеринара:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(5, 211);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(119, 19);
+            this.label10.TabIndex = 38;
+            this.label10.Text = "Введите время:";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -140,6 +170,15 @@
             this.label8.Size = new System.Drawing.Size(142, 19);
             this.label8.TabIndex = 35;
             this.label8.Text = "Введите ID услуги:";
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker4.Location = new System.Drawing.Point(9, 233);
+            this.dateTimePicker4.MinDate = new System.DateTime(2010, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker4.TabIndex = 39;
             // 
             // label7
             // 
@@ -213,6 +252,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label9);
@@ -235,6 +275,43 @@
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Добавление";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(9, 281);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(166, 46);
+            this.textBox7.TabIndex = 39;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(5, 259);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(194, 19);
+            this.label11.TabIndex = 38;
+            this.label11.Text = "Введите ФИО ветеринара:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(5, 211);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(119, 19);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "Введите время:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker3.Location = new System.Drawing.Point(9, 233);
+            this.dateTimePicker3.MinDate = new System.DateTime(2010, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker3.TabIndex = 37;
+            this.dateTimePicker3.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
             // 
             // dateTimePicker1
             // 
@@ -393,78 +470,6 @@
             this.veterinarian.ReadOnly = true;
             this.veterinarian.Width = 329;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(5, 211);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(119, 19);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "Введите время:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker3.Location = new System.Drawing.Point(9, 233);
-            this.dateTimePicker3.MinDate = new System.DateTime(2010, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker3.TabIndex = 37;
-            this.dateTimePicker3.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(5, 211);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(119, 19);
-            this.label10.TabIndex = 38;
-            this.label10.Text = "Введите время:";
-            // 
-            // dateTimePicker4
-            // 
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker4.Location = new System.Drawing.Point(9, 233);
-            this.dateTimePicker4.MinDate = new System.DateTime(2010, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker4.TabIndex = 39;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(9, 281);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(166, 46);
-            this.textBox7.TabIndex = 39;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(5, 259);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(194, 19);
-            this.label11.TabIndex = 38;
-            this.label11.Text = "Введите ФИО ветеринара:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(9, 281);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(166, 46);
-            this.textBox8.TabIndex = 41;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 259);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(194, 19);
-            this.label12.TabIndex = 40;
-            this.label12.Text = "Введите ФИО ветеринара:";
-            // 
             // FormAdmRecords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -481,7 +486,7 @@
             this.Font = new System.Drawing.Font("Bookman Old Style", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAdmRecords";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Панель администратора | записи";
