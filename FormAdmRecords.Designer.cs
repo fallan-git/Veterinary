@@ -1,6 +1,6 @@
 ﻿namespace Veterinary
 {
-    partial class FormAdmVet
+    partial class FormAdmRecords
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmVet));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id_pet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_user = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.disease = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmRecords));
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -58,97 +52,39 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.id_record = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_users = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_pet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_service = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.veterinarian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id_pet,
-            this.id_user,
-            this.date,
-            this.name,
-            this.disease});
-            this.dataGridView1.Location = new System.Drawing.Point(8, 323);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(764, 237);
-            this.dataGridView1.TabIndex = 31;
-            // 
-            // id_pet
-            // 
-            this.id_pet.DataPropertyName = "id_pet";
-            this.id_pet.HeaderText = "ID";
-            this.id_pet.Name = "id_pet";
-            this.id_pet.ReadOnly = true;
-            this.id_pet.Width = 40;
-            // 
-            // id_user
-            // 
-            this.id_user.DataPropertyName = "id_user";
-            this.id_user.HeaderText = "ID хозяина";
-            this.id_user.Name = "id_user";
-            this.id_user.ReadOnly = true;
-            this.id_user.Width = 90;
-            // 
-            // date
-            // 
-            this.date.DataPropertyName = "date";
-            this.date.HeaderText = "Дата рождения";
-            this.date.Name = "date";
-            this.date.ReadOnly = true;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "Имя";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            this.name.Width = 190;
-            // 
-            // disease
-            // 
-            this.disease.DataPropertyName = "disease";
-            this.disease.HeaderText = "Болезни";
-            this.disease.Name = "disease";
-            this.disease.ReadOnly = true;
-            this.disease.Width = 341;
             // 
             // button5
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.Location = new System.Drawing.Point(509, 71);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(150, 35);
-            this.button5.TabIndex = 39;
+            this.button5.TabIndex = 44;
             this.button5.Text = "Выделить";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Location = new System.Drawing.Point(509, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 53);
-            this.button3.TabIndex = 38;
+            this.button3.TabIndex = 43;
             this.button3.Text = "Удалить выбранную услугу";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -156,14 +92,12 @@
             this.button4.Location = new System.Drawing.Point(665, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 53);
-            this.button4.TabIndex = 37;
+            this.button4.TabIndex = 42;
             this.button4.Text = "Выход";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.dateTimePicker2);
@@ -179,7 +113,7 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox2.Size = new System.Drawing.Size(220, 307);
-            this.groupBox2.TabIndex = 36;
+            this.groupBox2.TabIndex = 41;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Изменение";
             // 
@@ -226,7 +160,6 @@
             this.button2.TabIndex = 31;
             this.button2.Text = "Изменить";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox4
             // 
@@ -262,7 +195,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox5);
@@ -278,7 +210,7 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox1.Size = new System.Drawing.Size(220, 307);
-            this.groupBox1.TabIndex = 35;
+            this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Добавление";
             // 
@@ -325,7 +257,6 @@
             this.button1.TabIndex = 27;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox3
             // 
@@ -359,65 +290,145 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Введите ID хозяина:";
             // 
-            // FormAdmVet
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToResizeColumns = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_record,
+            this.id_users,
+            this.id_pet,
+            this.id_service,
+            this.date,
+            this.time,
+            this.veterinarian});
+            this.dataGridView2.Location = new System.Drawing.Point(10, 323);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.Size = new System.Drawing.Size(762, 237);
+            this.dataGridView2.TabIndex = 45;
+            // 
+            // id_record
+            // 
+            this.id_record.DataPropertyName = "id_record";
+            this.id_record.HeaderText = "id_record";
+            this.id_record.Name = "id_record";
+            this.id_record.ReadOnly = true;
+            this.id_record.Visible = false;
+            // 
+            // id_users
+            // 
+            this.id_users.DataPropertyName = "id_users";
+            this.id_users.HeaderText = "ID клиента";
+            this.id_users.Name = "id_users";
+            this.id_users.ReadOnly = true;
+            this.id_users.Width = 80;
+            // 
+            // id_pet
+            // 
+            this.id_pet.DataPropertyName = "id_pet";
+            this.id_pet.HeaderText = "ID питомца";
+            this.id_pet.Name = "id_pet";
+            this.id_pet.ReadOnly = true;
+            this.id_pet.Width = 80;
+            // 
+            // id_service
+            // 
+            this.id_service.DataPropertyName = "id_service";
+            this.id_service.HeaderText = "ID услуги";
+            this.id_service.Name = "id_service";
+            this.id_service.ReadOnly = true;
+            this.id_service.Width = 70;
+            // 
+            // date
+            // 
+            this.date.DataPropertyName = "date";
+            this.date.HeaderText = "Дата";
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
+            // time
+            // 
+            this.time.DataPropertyName = "time";
+            this.time.HeaderText = "Время";
+            this.time.Name = "time";
+            this.time.ReadOnly = true;
+            // 
+            // veterinarian
+            // 
+            this.veterinarian.DataPropertyName = "veterinarian";
+            this.veterinarian.HeaderText = "Ветеринар";
+            this.veterinarian.Name = "veterinarian";
+            this.veterinarian.ReadOnly = true;
+            this.veterinarian.Width = 329;
+            // 
+            // FormAdmRecords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(784, 572);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Bookman Old Style", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormAdmVet";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "FormAdmRecords";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Панель администратора | питомцы";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "Панель администратора | записи";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_record;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_users;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_pet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_user;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_service;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn disease;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn veterinarian;
     }
 }
