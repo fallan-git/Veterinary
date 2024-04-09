@@ -12,6 +12,7 @@ namespace Veterinary
 {
     public partial class FormAdmVet : Form
     {
+        static public string EditId, EditIdOwner, EditName, EditDate, EditDiseases;
         public FormAdmVet()
         {
             InitializeComponent();
@@ -20,6 +21,22 @@ namespace Veterinary
             dateTimePicker2.MaxDate = DateNow;
             Pets.GetPets();
             dataGridView1.DataSource = Pets.DtbPets;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text != "" && textBox4.Text != "" && textBox6.Text != "" && dateTimePicker2.Text != "")
+            {
+                if (Pets.EditPet(EditId, textBox2.Text, dateTimePicker2.Text, textBox4.Text, textBox6.Text))
+                {
+                    MessageBox.Show("Питомец успешно изменён!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Pets.GetPets();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Заполните все данные!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -31,12 +48,11 @@ namespace Veterinary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox2.Text = dateTimePicker1.Text;
             if (textBox1.Text != "" && textBox3.Text != "" && textBox5.Text != "" && dateTimePicker1.Text != "")
             {
                 if (Pets.AddPet(textBox1.Text, dateTimePicker1.Text, textBox3.Text, textBox5.Text))
                 {
-                    MessageBox.Show("Питоиец успешно добавлен!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Питомец успешно добавлен!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Pets.GetPets();
                 }
             }
@@ -44,6 +60,33 @@ namespace Veterinary
             {
                 MessageBox.Show("Заполните все данные!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string Select = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данного питомца?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Del == DialogResult.Yes)
+            {
+                Pets.DeletePet(Select);
+                Pets.GetPets();
+                MessageBox.Show("Питоиец удалён", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            EditId = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            EditIdOwner = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            EditDate = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            EditName = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            EditDiseases = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+
+
+            textBox2.Text = EditIdOwner;
+            textBox4.Text = EditName;
+            textBox6.Text = EditDiseases;
+            dateTimePicker2.Text = EditDate;
         }
     }
 }

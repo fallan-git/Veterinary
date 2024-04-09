@@ -34,7 +34,10 @@ namespace Veterinary
                 object Result = DBConnection.msCommand.ExecuteScalar();
                 if (Result != null)
                 {
-                    DBConnection.msCommand.CommandText = @"INSERT INTO `pets` (`id_user`, `date`, `name`, `disease`) VALUES ('" + IdUser + "', '" + Date + "', '" + Name + "', '" + Disease + "');";
+                    DateTime NewDate = DateTime.ParseExact(Date, "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                    string EndDate = NewDate.ToString("yyyy-MM-dd"); 
+
+                    DBConnection.msCommand.CommandText = @"INSERT INTO `pets` (`id_user`, `date`, `name`, `disease`) VALUES ('" + IdUser + "', '" + EndDate + "', '" + Name + "', '" + Disease + "');";
                     if (DBConnection.msCommand.ExecuteNonQuery() > 0)
                     {
                         return true;
@@ -61,13 +64,25 @@ namespace Veterinary
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"UPDATE `pets` SET `id_user` = '" + IdUser + "', `date` = '" + Date + "', `name` = '" + Name + "', `disease` = '" + Disease + "' WHERE (`id_pet` = '" + IdPet + "');";
-                if (DBConnection.msCommand.ExecuteNonQuery() > 0)
+                DBConnection.msCommand.CommandText = @"SELECT `login` FROM `users` WHERE `id_account` = '" + IdUser + "'";
+                object Result = DBConnection.msCommand.ExecuteScalar();
+                if (Result != null)
                 {
-                    return true;
+                    DateTime NewDate = DateTime.ParseExact(Date, "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                    string EndDate = NewDate.ToString("yyyy-MM-dd");
+                    DBConnection.msCommand.CommandText = @"UPDATE `pets` SET `id_user` = '" + IdUser + "', `date` = '" + EndDate + "', `name` = '" + Name + "', `disease` = '" + Disease + "' WHERE (`id_pet` = '" + IdPet + "');";
+                    if (DBConnection.msCommand.ExecuteNonQuery() > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
                 else
                 {
+                    MessageBox.Show("Такого пользователя не существует.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
             }
