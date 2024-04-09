@@ -61,5 +61,12 @@ namespace Veterinary
             FAV.Show();
             Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormAdmRecords FAR = new FormAdmRecords();
+            FAR.Show();
+            Hide();
+        }
     }
 }

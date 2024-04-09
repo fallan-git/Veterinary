@@ -50,3 +50,4 @@ C:\Users\Leonid\source\repos\Veterinary\Veterinary\bin\Debug\System.Memory.dll
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmInfo.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmUsers.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmVet.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmRecords.resources

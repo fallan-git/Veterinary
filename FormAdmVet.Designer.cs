@@ -197,9 +197,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(5, 216);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(183, 19);
+            this.label7.Size = new System.Drawing.Size(193, 19);
             this.label7.TabIndex = 35;
-            this.label7.Text = "Введите дату рождения:";
+            this.label7.Text = "Выберите дату рождения:";
             // 
             // dateTimePicker2
             // 
@@ -241,6 +241,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(166, 23);
             this.textBox2.TabIndex = 34;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label6
             // 
@@ -296,9 +297,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(5, 216);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 19);
+            this.label4.Size = new System.Drawing.Size(193, 19);
             this.label4.TabIndex = 33;
-            this.label4.Text = "Введите дату рождения:";
+            this.label4.Text = "Выберите дату рождения:";
             // 
             // textBox5
             // 
@@ -349,6 +350,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(166, 23);
             this.textBox1.TabIndex = 1;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label1
             // 
