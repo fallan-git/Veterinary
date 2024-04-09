@@ -56,7 +56,7 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormUserMenu main = new FormUserMenu();
+            FormUser main = new FormUser();
             main.Show();
             Hide();
         }
