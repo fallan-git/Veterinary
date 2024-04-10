@@ -12,7 +12,24 @@ namespace Veterinary
     {
         static public DataTable DtbUsersForVet = new DataTable();
         static public DataTable DtbUsersForVet2 = new DataTable();
+        static public DataTable DtbUsersForRec = new DataTable();
         static public DataTable DtbUsers = new DataTable();
+
+        static public void GetUsersForRec()
+        {
+            try
+            {
+                DBConnection.msCommand.CommandText = @"SELECT `fio` FROM `users` WHERE `id_role` = '2';";
+                DtbUsersForRec.Clear();
+                DBConnection.msDataAdapter.SelectCommand = DBConnection.msCommand;
+                DBConnection.msDataAdapter.Fill(DtbUsersForRec);
+
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка получения данных.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         static public void GetUsersForVet()
         {
             try

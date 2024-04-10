@@ -11,6 +11,23 @@ namespace Veterinary
     internal class Pets
     {
         static public DataTable DtbPets = new DataTable();
+        static public DataTable DtbPetsForRec = new DataTable();
+
+        static public void GetPetsForRec()
+        {
+            try
+            {
+                DBConnection.msCommand.CommandText = @"SELECT `name` FROM pets WHERE `id_user` = '" + Authorization.ID + "';";
+                DtbPetsForRec.Clear();
+                DBConnection.msDataAdapter.SelectCommand = DBConnection.msCommand;
+                DBConnection.msDataAdapter.Fill(DtbPetsForRec);
+
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка получения данных.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         static public void GetPets()
         {
             try

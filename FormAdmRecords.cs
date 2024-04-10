@@ -12,7 +12,7 @@ namespace Veterinary
 {
     public partial class FormAdmRecords : Form
     {
-        static public string EditId, EditIdUser, EditIdPet, EditIdService, EditDate, EditTime, EditVeterinarian;
+        static public string EditId, EditIdUser, EditIdPet, EditIdService, EditVeterinarian;
         public FormAdmRecords()
         {
             InitializeComponent();
@@ -111,9 +111,9 @@ namespace Veterinary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox3.Text != "" && textBox5.Text != "" && textBox7.Text != "" && dateTimePicker1.Text != "" && dateTimePicker3.Text != "")
+            if (textBox1.Text != "" && textBox3.Text != "" && textBox5.Text != "" && textBox7.Text != "" && dateTimePicker1.Text != "" && comboBox1.Text != "")
             {
-                if (Records.AddRecord(textBox1.Text, textBox3.Text, textBox5.Text, dateTimePicker1.Text, dateTimePicker3.Text, textBox7.Text))
+                if (Records.AddRecord(textBox1.Text, textBox3.Text, textBox5.Text, dateTimePicker1.Text, comboBox1.Text, textBox7.Text))
                 {
                     MessageBox.Show("Запись успешно добавлена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Records.GetRecords();
@@ -127,9 +127,9 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text != "" && textBox4.Text != "" && textBox6.Text != "" && textBox8.Text != "" && dateTimePicker2.Text != "" && dateTimePicker4.Text != "")
+            if (textBox2.Text != "" && textBox4.Text != "" && textBox6.Text != "" && textBox8.Text != "" && dateTimePicker2.Text != "" && comboBox2.Text != "")
             {
-                if (Records.EditRecord(EditId, textBox2.Text, textBox4.Text, textBox6.Text, dateTimePicker2.Text, dateTimePicker4.Text, textBox8.Text))
+                if (Records.EditRecord(EditId, textBox2.Text, textBox4.Text, textBox6.Text, dateTimePicker2.Text, comboBox2.Text, textBox8.Text))
                 {
                     MessageBox.Show("Запись успешно изменена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Records.GetRecords();
@@ -147,17 +147,12 @@ namespace Veterinary
             EditIdUser = dataGridView2.CurrentRow.Cells[1].Value.ToString();
             EditIdPet = dataGridView2.CurrentRow.Cells[2].Value.ToString();
             EditIdService = dataGridView2.CurrentRow.Cells[3].Value.ToString();
-            EditDate = dataGridView2.CurrentRow.Cells[4].Value.ToString();
-            EditTime = dataGridView2.CurrentRow.Cells[5].Value.ToString();
             EditVeterinarian = dataGridView2.CurrentRow.Cells[6].Value.ToString();
-
 
             textBox2.Text = EditIdUser;
             textBox4.Text = EditIdPet;
             textBox6.Text = EditIdService;
             textBox8.Text = EditVeterinarian;
-            dateTimePicker2.Text = EditDate;
-            dateTimePicker4.Text = EditTime;
         }
     }
 }

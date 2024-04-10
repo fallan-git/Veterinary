@@ -11,7 +11,23 @@ namespace Veterinary
     internal class List
     {
         static public DataTable DtbList = new DataTable();
+        static public DataTable DtbListForRec = new DataTable();
 
+        static public void GetListForRec()
+        {
+            try
+            {
+                DBConnection.msCommand.CommandText = @"SELECT `name` FROM `list`;";
+                DtbListForRec.Clear();
+                DBConnection.msDataAdapter.SelectCommand = DBConnection.msCommand;
+                DBConnection.msDataAdapter.Fill(DtbListForRec);
+
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка получения данных.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         static public void GetList()
         {
             try

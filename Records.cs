@@ -28,6 +28,53 @@ namespace Veterinary
                 MessageBox.Show("Ошибка получения данных.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        static public bool AddRecordForUser(string Date, string Time, string NameService, string Veterinar, string Pet)
+        {
+            object IdPet;
+            try
+            {
+                DateTime NewDate = DateTime.ParseExact(Date, "dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                string EndDate = NewDate.ToString("yyyy-MM-dd");
+
+                DBConnection.msCommand.CommandText = @"SELECT `id_service` FROM `list` WHERE `name` = '" + NameService + "';";
+                object IdService = DBConnection.msCommand.ExecuteScalar();
+                if (Pet != "null")
+                {
+                    DBConnection.msCommand.CommandText = @"SELECT `id_pet` FROM `pets` WHERE `name` = '" + Pet + "';";
+                    IdPet = DBConnection.msCommand.ExecuteScalar();
+                }
+                else
+                {
+                    IdPet = "null";
+                }
+                DBConnection.msCommand.CommandText = @"SELECT `time` FROM records WHERE `date` = '" + EndDate + "' and `time` = '" + Time + "';";
+                object Result = DBConnection.msCommand.ExecuteScalar();
+                if (Result == null)
+                {
+                    DBConnection.msCommand.CommandText = @"INSERT INTO `records` (`id_users`, `id_pet`, `id_service`, `date`, `time`, `veterinarian`) VALUES ('" + Authorization.ID + "', " + IdPet + ", '" + IdService + "', '" + EndDate + "', '" + Time + "', '" + Veterinar + "');";
+                    if (DBConnection.msCommand.ExecuteNonQuery() > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Данное время занято!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка добавления данных.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
         static public bool AddRecord(string IdUser, string IdPet, string IdService, string Date, string Time, string Veterinar)
         {
             try
