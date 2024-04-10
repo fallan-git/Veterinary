@@ -78,3 +78,4 @@ C:\Users\21100\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.csproj.Co
 C:\Users\21100\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.exe
 C:\Users\21100\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.pdb
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUser.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUsersPets.resources

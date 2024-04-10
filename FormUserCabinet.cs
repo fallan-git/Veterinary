@@ -56,8 +56,8 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormUser main = new FormUser();
-            main.Show();
+            FormUser Main = new FormUser();
+            Main.Show();
             Hide();
         }
 
@@ -84,6 +84,13 @@ namespace Veterinary
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormUsersPets Pets = new FormUsersPets();
+            Pets.Show();
+            Hide();
         }
     }
 }

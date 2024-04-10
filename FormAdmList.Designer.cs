@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmList));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.id_service = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -49,10 +53,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.id_service = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -78,6 +78,38 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(765, 227);
             this.dataGridView1.TabIndex = 23;
+            // 
+            // id_service
+            // 
+            this.id_service.DataPropertyName = "id_service";
+            this.id_service.HeaderText = "id_service";
+            this.id_service.Name = "id_service";
+            this.id_service.ReadOnly = true;
+            this.id_service.Visible = false;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "Название";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 130;
+            // 
+            // price
+            // 
+            this.price.DataPropertyName = "price";
+            this.price.HeaderText = "Цена";
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            this.price.Width = 80;
+            // 
+            // description
+            // 
+            this.description.DataPropertyName = "description";
+            this.description.HeaderText = "Описание";
+            this.description.Name = "description";
+            this.description.ReadOnly = true;
+            this.description.Width = 552;
             // 
             // groupBox1
             // 
@@ -277,38 +309,6 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // id_service
-            // 
-            this.id_service.DataPropertyName = "id_service";
-            this.id_service.HeaderText = "id_service";
-            this.id_service.Name = "id_service";
-            this.id_service.ReadOnly = true;
-            this.id_service.Visible = false;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "Название";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            this.name.Width = 130;
-            // 
-            // price
-            // 
-            this.price.DataPropertyName = "price";
-            this.price.HeaderText = "Цена";
-            this.price.Name = "price";
-            this.price.ReadOnly = true;
-            this.price.Width = 80;
-            // 
-            // description
-            // 
-            this.description.DataPropertyName = "description";
-            this.description.HeaderText = "Описание";
-            this.description.Name = "description";
-            this.description.ReadOnly = true;
-            this.description.Width = 552;
-            // 
             // FormAdmList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -328,7 +328,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAdmList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Список услуг | Админ панель";
+            this.Text = "Панель администратора | списог услуг";
             this.Load += new System.EventHandler(this.FormListAdm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
