@@ -25,7 +25,7 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text != "" && textBox4.Text != "" && textBox6.Text != "" && dateTimePicker2.Text != "")
+            if (textBox2.Text != "" && textBox4.Text != "" && dateTimePicker2.Text != "")
             {
                 if (Pets.EditPet(EditId, textBox2.Text, dateTimePicker2.Text, textBox4.Text, textBox6.Text))
                 {
@@ -66,7 +66,7 @@ namespace Veterinary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox3.Text != "" && textBox5.Text != "" && dateTimePicker1.Text != "")
+            if (textBox1.Text != "" && textBox3.Text != "" && dateTimePicker1.Text != "")
             {
                 if (Pets.AddPet(textBox1.Text, dateTimePicker1.Text, textBox3.Text, textBox5.Text))
                 {
@@ -88,7 +88,7 @@ namespace Veterinary
             {
                 Pets.DeletePet(Select);
                 Pets.GetPets();
-                MessageBox.Show("Питоиец удалён", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Питомец удалён", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
