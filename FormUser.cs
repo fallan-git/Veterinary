@@ -15,7 +15,11 @@ namespace Veterinary
         public FormUser()
         {
             InitializeComponent();
+            Information.GetDopInfo();
             LabelLogin.Text = Convert.ToString(Authorization.User);
+            label8.Text = Convert.ToString(Information.Adres);
+            label7.Text = Convert.ToString(Information.Grafik);
+            label3.Text = Convert.ToString(Information.Number);
         }
 
         private void button2_Click(object sender, EventArgs e)

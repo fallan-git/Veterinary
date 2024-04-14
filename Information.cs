@@ -10,7 +10,29 @@ namespace Veterinary
 {
     internal class Information
     {
+        static public string Grafik, Number, Adres;
         static public DataTable DtbInformation = new DataTable();
+        static public void GetDopInfo()
+        {
+            try
+            {
+                DBConnection.msCommand.CommandText = @"SELECT `content` FROM `information` WHERE `title` = 'График работы';";
+                object GrafikOne = DBConnection.msCommand.ExecuteScalar();
+                Grafik = Convert.ToString(GrafikOne);
+
+                DBConnection.msCommand.CommandText = @"SELECT `content` FROM `information` WHERE `title` = 'Номер телефона';";
+                object NumberOne = DBConnection.msCommand.ExecuteScalar();
+                Number = Convert.ToString(NumberOne);
+
+                DBConnection.msCommand.CommandText = @"SELECT `content` FROM `information` WHERE `title` = 'Адрес';";
+                object AdresOne = DBConnection.msCommand.ExecuteScalar();
+                Adres = Convert.ToString(AdresOne);
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка получения данных.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         static public void GetInfo()
         {
             try

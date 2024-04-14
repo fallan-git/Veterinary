@@ -14,6 +14,23 @@ namespace Veterinary
     internal class Records
     {
         static public DataTable DtbRecords = new DataTable();
+        static public DataTable DtbRecordsFromUsersCab = new DataTable();
+
+        static public void GetRecordsFromUsersCab()
+        {
+            try
+            {
+                DBConnection.msCommand.CommandText = @"SELECT `id_record`, `time`, `records`.`date`, `veterinarian`, `pets`.`name`, `list`.`name` AS title FROM `records` JOIN `pets` ON `id_users` = `id_user` JOIN `list` ON `records`.`id_service` = `list`.`id_service` WHERE `id_users` = '" + Authorization.ID + "';";
+                DtbRecordsFromUsersCab.Clear();
+                DBConnection.msDataAdapter.SelectCommand = DBConnection.msCommand;
+                DBConnection.msDataAdapter.Fill(DtbRecordsFromUsersCab);
+
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка получения данных.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         static public void GetRecords()
         {
             try

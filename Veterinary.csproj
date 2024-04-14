@@ -99,6 +99,12 @@
     <Compile Include="FormUser.Designer.cs">
       <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUserRecList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserRecList.Designer.cs">
+      <DependentUpon>FormUserRecList.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUserRecords.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,7 +167,6 @@
     <Compile Include="Records.cs" />
     <Compile Include="Registration.cs" />
     <Compile Include="Users.cs" />
-    <Compile Include="UsersFunctions.cs" />
     <EmbeddedResource Include="FormAdmInfo.resx">
       <DependentUpon>FormAdmInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserRecList.resx">
+      <DependentUpon>FormUserRecList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUserRecords.resx">
       <DependentUpon>FormUserRecords.cs</DependentUpon>

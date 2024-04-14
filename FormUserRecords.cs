@@ -33,8 +33,8 @@ namespace Veterinary
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormUser main = new FormUser();
-            main.Show();
+            FormUser Main = new FormUser();
+            Main.Show();
             Hide();
         }
 
@@ -62,6 +62,9 @@ namespace Veterinary
                 if (Records.AddRecordForUser(dateTimePicker1.Text, comboBox2.Text, SelectService, SelectVeterinar, SelectPets))
                 {
                     MessageBox.Show("Запись успешно добавлена!", "Добавление.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FormUserRecList RecList = new FormUserRecList();
+                    RecList.Show();
+                    Hide();
                 }
             }
             else

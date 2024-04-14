@@ -29,7 +29,6 @@ C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmInfo.re
 C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormLogin.resources
 C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormRegister.resources
 C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserCabinet.resources
-C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserMenu.resources
 C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserRecords.resources
 C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdm.resources
 C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmList.resources
@@ -79,3 +78,9 @@ C:\Users\21100\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.exe
 C:\Users\21100\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.pdb
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUser.resources
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUsersPets.resources
+C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmRecords.resources
+C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormAdmVet.resources
+C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormUser.resources
+C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormUsersPets.resources
+C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserRecList.resources
+C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormUserRecList.resources

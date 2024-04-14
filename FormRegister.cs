@@ -78,11 +78,15 @@ namespace Veterinary
             var fio = textBox5.Text + " " + textBox6.Text + " " + textBox7.Text;
             if (textBox4.Text == "" || textBox3.Text == "" || textBox2.Text == "" || textBox1.Text == "" || textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "")
             {
-                MessageBox.Show("Вы не указали все данные.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Вы не указали все данные.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (textBox4.Text != textBox3.Text)
             {
-                MessageBox.Show("Пароли не совпадают.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Пароли не совпадают.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (Encoding.UTF8.GetByteCount(textBox2.Text) != 11)
+            {
+                MessageBox.Show("Номер телефона введён не в верном формате.\n\nПример: 88005553535", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {

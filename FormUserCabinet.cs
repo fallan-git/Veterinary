@@ -46,10 +46,13 @@ namespace Veterinary
             {
                 MessageBox.Show("Пароли не совпадают.", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (Encoding.UTF8.GetByteCount(textBox2.Text) != 11)
+            {
+                MessageBox.Show("Номер телефона введён не в верном формате.\n\nПример: 88005553535", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             else
             {
-                UsersFunctions.UppdateProfile(textBox1.Text, textBox2.Text, textBox4.Text, textBox3.Text);
-                Authorization.Authorization1(textBox1.Text, textBox4.Text);
+                Users.UppdateProfile(textBox1.Text, textBox2.Text, textBox4.Text, textBox3.Text);
             }
             
         }
@@ -90,6 +93,13 @@ namespace Veterinary
         {
             FormUsersPets Pets = new FormUsersPets();
             Pets.Show();
+            Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormUserRecList RecList = new FormUserRecList();
+            RecList.Show();
             Hide();
         }
     }
