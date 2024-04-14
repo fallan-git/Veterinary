@@ -19,11 +19,6 @@ namespace Veterinary
             dataGridView1.DataSource = List.DtbList;
         }
 
-        private void FormUserList_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             FormUser Main = new FormUser();

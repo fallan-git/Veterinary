@@ -38,11 +38,6 @@ namespace Veterinary
             Hide();
         }
 
-        private void FormRecords_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string SelectService = dataGridView2.CurrentRow.Cells[0].Value.ToString();

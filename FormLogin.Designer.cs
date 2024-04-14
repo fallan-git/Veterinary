@@ -46,7 +46,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 30);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -80,7 +79,6 @@
             this.label3.Size = new System.Drawing.Size(79, 21);
             this.label3.TabIndex = 4;
             this.label3.Text = "Пароль";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox2
             // 
@@ -90,7 +88,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 30);
             this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button_login
             // 

@@ -130,11 +130,6 @@ namespace Veterinary
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             EditID = dataGridView1.CurrentRow.Cells[0].Value.ToString();

@@ -17,31 +17,11 @@ namespace Veterinary
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormLogin f = new FormLogin();
             f.Show();
             Hide();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
@@ -51,26 +31,6 @@ namespace Veterinary
             {
                 e.Handled = true;
             }
-        }
-
-        private void textBox1_Enter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox2_Enter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox3_Enter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox4_Enter(object sender, EventArgs e)
-        {
-           
         }
 
         private void button1_Click(object sender, EventArgs e)

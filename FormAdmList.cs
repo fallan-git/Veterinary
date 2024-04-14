@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Veterinary
 {
@@ -20,17 +19,6 @@ namespace Veterinary
             List.GetList();
             dataGridView1.DataSource = List.DtbList;
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormListAdm_Load(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void button1_Click_1(object sender, EventArgs e)
         {

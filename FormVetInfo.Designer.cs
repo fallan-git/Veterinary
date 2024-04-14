@@ -170,7 +170,6 @@
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.Size = new System.Drawing.Size(650, 467);
             this.dataGridView2.TabIndex = 33;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // id_account
             // 
@@ -281,7 +280,6 @@
             this.Name = "FormVetInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Панель ветеринара | просмотр информации о клиентах";
-            this.Load += new System.EventHandler(this.Form_VetInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();

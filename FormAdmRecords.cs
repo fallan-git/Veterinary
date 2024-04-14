@@ -33,16 +33,6 @@ namespace Veterinary
             Hide();
         }
 
-        private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;

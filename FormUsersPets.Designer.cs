@@ -124,7 +124,6 @@
             this.label8.Size = new System.Drawing.Size(132, 19);
             this.label8.TabIndex = 35;
             this.label8.Text = "Введите болезни:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -134,7 +133,6 @@
             this.label7.Size = new System.Drawing.Size(193, 19);
             this.label7.TabIndex = 35;
             this.label7.Text = "Выберите дату рождения:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // dateTimePicker2
             // 
@@ -144,7 +142,6 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker2.TabIndex = 35;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // textBox6
             // 
@@ -153,7 +150,6 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(166, 76);
             this.textBox6.TabIndex = 35;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // button2
             // 
@@ -171,7 +167,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(166, 23);
             this.textBox4.TabIndex = 4;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label5
             // 
@@ -181,7 +176,6 @@
             this.label5.Size = new System.Drawing.Size(104, 19);
             this.label5.TabIndex = 35;
             this.label5.Text = "Введите имя:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // groupBox1
             // 

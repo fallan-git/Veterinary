@@ -408,7 +408,6 @@
             this.label9.Size = new System.Drawing.Size(119, 19);
             this.label9.TabIndex = 36;
             this.label9.Text = "Введите время:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // dateTimePicker1
             // 

@@ -139,7 +139,6 @@
             this.Name = "FormUserList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Просмотр услуг";
-            this.Load += new System.EventHandler(this.FormUserList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

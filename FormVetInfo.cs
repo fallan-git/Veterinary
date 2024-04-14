@@ -26,11 +26,6 @@ namespace Veterinary
             dataGridView3.Visible = false;
         }
 
-        private void Form_VetInfo_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             FormVet FV = new FormVet();
@@ -57,11 +52,6 @@ namespace Veterinary
             dataGridView1.Visible = false;
             dataGridView2.Visible = false;
             dataGridView3.Visible = true;
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
     }

@@ -40,26 +40,6 @@ namespace Veterinary
             }
         }
 
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             string Select = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -86,16 +66,6 @@ namespace Veterinary
             {
                 MessageBox.Show("Заполните все данные!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button4_Click(object sender, EventArgs e)

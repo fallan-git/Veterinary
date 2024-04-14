@@ -234,7 +234,6 @@
             this.Name = "FormUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню";
-            this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

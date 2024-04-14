@@ -73,7 +73,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(206, 30);
             this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label3
@@ -83,7 +82,7 @@
             this.label3.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(268, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(265, 32);
+            this.label3.Size = new System.Drawing.Size(264, 32);
             this.label3.TabIndex = 4;
             this.label3.Text = "Личный кабинет";
             // 
@@ -111,7 +110,6 @@
             this.label4.Size = new System.Drawing.Size(180, 21);
             this.label4.TabIndex = 14;
             this.label4.Text = "Список питомцев";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button2
             // 
@@ -158,7 +156,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(206, 30);
             this.textBox5.TabIndex = 28;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label7
             // 
@@ -191,7 +188,6 @@
             this.label6.Size = new System.Drawing.Size(55, 21);
             this.label6.TabIndex = 25;
             this.label6.Text = "ФИО";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox3
             // 
@@ -264,7 +260,6 @@
             this.Name = "FormUserCabinet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Личный кабинет";
-            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -36,6 +36,12 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LabelLogin
@@ -132,6 +138,75 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(109, 148);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 27);
+            this.label8.TabIndex = 40;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(227, 98);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 27);
+            this.label7.TabIndex = 39;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(12, 148);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 27);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "Адрес:";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(12, 98);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(209, 27);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "График работы:";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(232, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 27);
+            this.label3.TabIndex = 36;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Bookman Old Style", 18F);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(12, 49);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(220, 27);
+            this.label4.TabIndex = 35;
+            this.label4.Text = "Номер телефона:";
+            // 
             // FormVet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
@@ -139,6 +214,12 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(784, 491);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.LabelLogin);
             this.Controls.Add(this.label2);
@@ -153,7 +234,6 @@
             this.Name = "FormVet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Панель ветеринара";
-            this.Load += new System.EventHandler(this.Form_Vet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,5 +248,11 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

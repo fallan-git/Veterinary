@@ -31,11 +31,6 @@ namespace Veterinary
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "")
@@ -62,31 +57,6 @@ namespace Veterinary
             FormUser Main = new FormUser();
             Main.Show();
             Hide();
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button3_Click(object sender, EventArgs e)

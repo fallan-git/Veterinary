@@ -130,7 +130,6 @@
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Добавление";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button1
             // 
@@ -329,7 +328,6 @@
             this.Name = "FormAdmList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Панель администратора | списог услуг";
-            this.Load += new System.EventHandler(this.FormListAdm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -97,8 +97,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 30);
             this.textBox2.TabIndex = 10;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label2
@@ -131,7 +129,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 30);
             this.textBox1.TabIndex = 7;
-            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
             // 
             // label4
             // 
@@ -143,7 +140,6 @@
             this.label4.Size = new System.Drawing.Size(168, 21);
             this.label4.TabIndex = 15;
             this.label4.Text = "Номер телефона";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox3
             // 
@@ -153,8 +149,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(200, 30);
             this.textBox3.TabIndex = 14;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            this.textBox3.Enter += new System.EventHandler(this.textBox3_Enter);
             // 
             // label5
             // 
@@ -175,7 +169,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(200, 30);
             this.textBox4.TabIndex = 16;
-            this.textBox4.Enter += new System.EventHandler(this.textBox4_Enter);
             // 
             // label6
             // 
@@ -240,7 +233,7 @@
             this.textBox7.Size = new System.Drawing.Size(200, 30);
             this.textBox7.TabIndex = 22;
             // 
-            // Form2
+            // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -268,10 +261,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "Form2";
+            this.Name = "FormRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
