@@ -10,6 +10,7 @@ namespace Veterinary
 {
     internal class Pets
     {
+        static public object True;
         static public DataTable DtbPets = new DataTable();
         static public DataTable DtbPetsForRec = new DataTable();
         static public DataTable DtbPetsForUser = new DataTable();
@@ -22,7 +23,8 @@ namespace Veterinary
                 DtbPetsForUser.Clear();
                 DBConnection.msDataAdapter.SelectCommand = DBConnection.msCommand;
                 DBConnection.msDataAdapter.Fill(DtbPetsForUser);
-
+                DBConnection.msCommand.CommandText = @"SELECT `id_pet` FROM `pets` WHERE `id_user` = '" + Authorization.ID + "';";
+                True = DBConnection.msCommand.ExecuteScalar();
             }
             catch
             {
@@ -129,8 +131,11 @@ namespace Veterinary
         {
             try
             {
+                DBConnection.msCommand.CommandText = @"UPDATE `records` SET `id_pet` = null WHERE `id_pet` = '" + IdPet + "';";
+                DBConnection.msCommand.ExecuteNonQuery();
                 DBConnection.msCommand.CommandText = @"DELETE FROM `pets` WHERE (`id_pet` = '" + IdPet + "');";
                 DBConnection.msCommand.ExecuteNonQuery();
+                MessageBox.Show("Питомец удалён", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {

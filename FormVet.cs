@@ -15,6 +15,7 @@ namespace Veterinary
         public FormVet()
         {
             InitializeComponent();
+            Information.GetDopInfo();
             LabelLogin.Text = Convert.ToString(Authorization.User);
             label8.Text = Convert.ToString(Information.Adres);
             label7.Text = Convert.ToString(Information.Grafik);
@@ -26,11 +27,6 @@ namespace Veterinary
             FormLogin FL = new FormLogin();
             FL.Show();
             Hide();
-        }
-
-        private void Form_Vet_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button3_Click(object sender, EventArgs e)

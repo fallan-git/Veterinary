@@ -84,5 +84,13 @@ namespace Veterinary
         {
             DBConnection.ConnectionDB();
         }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+            {
+                button1_Click(sender, e);
+            }
+        }
     }
 }

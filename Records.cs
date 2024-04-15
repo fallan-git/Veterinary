@@ -13,18 +13,26 @@ namespace Veterinary
 {
     internal class Records
     {
+        static public object True, TrueTwo;
         static public DataTable DtbRecords = new DataTable();
         static public DataTable DtbRecordsFromUsersCab = new DataTable();
+        static public DataTable DtbRecordsFromUsersCabTwo = new DataTable();
 
         static public void GetRecordsFromUsersCab()
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"SELECT `id_record`, `time`, `records`.`date`, `veterinarian`, `pets`.`name`, `list`.`name` AS title FROM `records` JOIN `pets` ON `id_users` = `id_user` JOIN `list` ON `records`.`id_service` = `list`.`id_service` WHERE `id_users` = '" + Authorization.ID + "';";
+                DBConnection.msCommand.CommandText = @"SELECT `id_record`, `time`, `records`.`date`, `veterinarian`, `pets`.`name`, `list`.`name` AS title FROM `records` JOIN `pets` ON `id_users` = `id_user` JOIN `list` ON `records`.`id_service` = `list`.`id_service` WHERE `id_users` = '" + Authorization.ID + "' AND `records`.`id_pet` IS not null;";
                 DtbRecordsFromUsersCab.Clear();
                 DBConnection.msDataAdapter.SelectCommand = DBConnection.msCommand;
                 DBConnection.msDataAdapter.Fill(DtbRecordsFromUsersCab);
+                True = DBConnection.msCommand.ExecuteScalar();
 
+                DBConnection.msCommand.CommandText = @"SELECT `id_record`, `time`, `records`.`date`, `veterinarian`, `list`.`name` AS title FROM `records` JOIN `list` ON `records`.`id_service` = `list`.`id_service` WHERE `id_users` = '" + Authorization.ID + "' AND `records`.`id_pet` IS null;";
+                DtbRecordsFromUsersCabTwo.Clear();
+                DBConnection.msDataAdapter.SelectCommand = DBConnection.msCommand;
+                DBConnection.msDataAdapter.Fill(DtbRecordsFromUsersCabTwo);
+                TrueTwo = DBConnection.msCommand.ExecuteScalar();
             }
             catch
             {
@@ -39,6 +47,7 @@ namespace Veterinary
                 DtbRecords.Clear();
                 DBConnection.msDataAdapter.SelectCommand = DBConnection.msCommand;
                 DBConnection.msDataAdapter.Fill(DtbRecords);
+
             }
             catch
             {

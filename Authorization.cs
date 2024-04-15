@@ -22,15 +22,12 @@ namespace Veterinary
                     Role = result.ToString();
                     User = login;
                     Password = password;
-
                     DBConnection.msCommand.CommandText = @"SELECT id_account FROM users WHERE login = '" + login + "';";
                     object id = DBConnection.msCommand.ExecuteScalar();
                     ID = Convert.ToString(id);
-
                     DBConnection.msCommand.CommandText = @"SELECT number_phone FROM users WHERE id_account = '" + ID + "';"; 
                     object number = DBConnection.msCommand.ExecuteScalar();
                     Number = Convert.ToString(number);
-
                     DBConnection.msCommand.CommandText = @"SELECT fio FROM users WHERE id_account = '" + ID + "';";
                     object fio = DBConnection.msCommand.ExecuteScalar();
                     FIO = Convert.ToString(fio);

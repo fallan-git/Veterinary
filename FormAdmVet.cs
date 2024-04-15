@@ -88,7 +88,6 @@ namespace Veterinary
             {
                 Pets.DeletePet(Select);
                 Pets.GetPets();
-                MessageBox.Show("Питомец удалён", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

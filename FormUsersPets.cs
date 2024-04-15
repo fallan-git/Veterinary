@@ -42,13 +42,19 @@ namespace Veterinary
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string Select = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данного питомца?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (Del == DialogResult.Yes)
+            if (Pets.True == null)
             {
-                Pets.DeletePet(Select);
-                Pets.GetPetsForUser();
-                MessageBox.Show("Питомец удалён", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Таблица пустая, удалять нечего!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                string Select = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данного питомца?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (Del == DialogResult.Yes)
+                {
+                    Pets.DeletePet(Select);
+                    Pets.GetPetsForUser();
+                }
             }
         }
 
@@ -77,15 +83,23 @@ namespace Veterinary
 
         private void button5_Click(object sender, EventArgs e)
         {
-            EditId = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            EditIdOwner = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            EditDate = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            EditName = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            EditDiseases = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            Pets.GetPetsForUser();
+            if (Pets.True == null)
+            {
+                MessageBox.Show("Таблица пустая, выделять нечего!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                EditId = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                EditIdOwner = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                EditDate = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                EditName = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                EditDiseases = dataGridView1.CurrentRow.Cells[4].Value.ToString();
 
-            textBox4.Text = EditName;
-            textBox6.Text = EditDiseases;
-            dateTimePicker2.Text = EditDate;
+                textBox4.Text = EditName;
+                textBox6.Text = EditDiseases;
+                dateTimePicker2.Text = EditDate;
+            }
         }
     }
 }

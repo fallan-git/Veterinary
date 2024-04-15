@@ -17,6 +17,7 @@ namespace Veterinary
             InitializeComponent();
             Records.GetRecordsFromUsersCab();
             dataGridView2.DataSource = Records.DtbRecordsFromUsersCab;
+            dataGridView1.DataSource = Records.DtbRecordsFromUsersCabTwo;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -35,13 +36,39 @@ namespace Veterinary
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string Select = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-            DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данную запись?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (Del == DialogResult.Yes)
+            if (Records.True == null)
             {
-                Records.DeleteRecord(Select);
-                Records.GetRecordsFromUsersCab();
-                MessageBox.Show("Запись удалена", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Таблица пустая, удалять нечего!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else 
+            {
+                string Select = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+                DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данную запись?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (Del == DialogResult.Yes)
+                {
+                    Records.DeleteRecord(Select);
+                    Records.GetRecordsFromUsersCab();
+                    MessageBox.Show("Запись удалена", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Records.TrueTwo == null)
+            {
+                MessageBox.Show("Таблица пустая, удалять нечего!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                string Select = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данную запись?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (Del == DialogResult.Yes)
+                {
+                    Records.DeleteRecord(Select);
+                    Records.GetRecordsFromUsersCab();
+                    MessageBox.Show("Запись удалена", "Удаление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
     }
