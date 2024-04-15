@@ -12,11 +12,10 @@ namespace Veterinary
 {
     public partial class FormLogin : Form
     {
-        static public string loginActive;
-        static public string whois;
         public FormLogin()
         {
             InitializeComponent();
+            DBConnection.ConnectionDB();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,8 +32,6 @@ namespace Veterinary
                         }
                     case "Администратор":
                         {
-                            loginActive = textBox1.Text;
-                            whois = "Администратор";
                             Authorization.User = textBox1.Text;
                             MessageBox.Show(textBox1.Text + ", добро пожаловать в меню администратора!", "Успешный вход в панель администратора.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Hide();
@@ -44,8 +41,6 @@ namespace Veterinary
                         }
                     case "Ветеринар":
                         {
-                            loginActive = textBox1.Text;
-                            whois = "Ветеринар";
                             Authorization.User = textBox1.Text;
                             MessageBox.Show(textBox1.Text + ", добро пожаловать в меню ветеринара!", "Успешный вход в панель ветеринара.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Hide();
@@ -55,8 +50,6 @@ namespace Veterinary
                         }
                     case "Пользователь":
                         {
-                            loginActive = textBox1.Text;
-                            whois = "Пользователь";
                             Authorization.User = textBox1.Text;
                             MessageBox.Show(textBox1.Text + ", добро пожаловать в меню пользователя!", "Успешный вход в меню.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Hide();
@@ -82,7 +75,7 @@ namespace Veterinary
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            DBConnection.ConnectionDB();
+  
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)

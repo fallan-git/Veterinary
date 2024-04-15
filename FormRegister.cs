@@ -16,14 +16,12 @@ namespace Veterinary
         {
             InitializeComponent();
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormLogin f = new FormLogin();
             f.Show();
             Hide();
         }
-
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
@@ -32,7 +30,6 @@ namespace Veterinary
                 e.Handled = true;
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             var fio = textBox5.Text + " " + textBox6.Text + " " + textBox7.Text;

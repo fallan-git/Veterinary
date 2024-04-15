@@ -32,13 +32,5 @@ namespace Veterinary
                 return false;
             }
         }
-        public static void ColoseDB() 
-        {
-            myconnect.Close();
-        }
-        public MySqlConnection GetConnection()
-        {
-            return myconnect;
-        }
     }
 }
