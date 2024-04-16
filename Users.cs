@@ -141,7 +141,7 @@ namespace Veterinary
                     MessageBox.Show("Данные профиля были успешно обновлены!", "Успешная регистрация.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     if (DBConnection.msCommand.ExecuteNonQuery() > 0)
                     {
-                        Authorization.Authorization1(Login, Password);
+                        Authorization.Authorizations(Login, Password);
                     }
                 }
                 catch
@@ -162,7 +162,7 @@ namespace Veterinary
                     MessageBox.Show("Данные профиля были успешно обновлены!", "Успешная регистрация.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     if (DBConnection.msCommand.ExecuteNonQuery() > 0)
                     {
-                        Authorization.Authorization1(Login, Password);
+                        Authorization.Authorizations(Login, Password);
                     }
                 }
                 catch

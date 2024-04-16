@@ -13,7 +13,7 @@ namespace Veterinary
     internal class Registration
     {
         static public string Resulting;
-        static public void Registration1(string Login, string NumberPhone, string Password, string FIO)
+        static public void Registrations(string Login, string NumberPhone, string Password, string FIO)
         {
             DBConnection.msCommand.CommandText = @"SELECT id_account FROM users WHERE login = '" + Login + "';";
             object Result = DBConnection.msCommand.ExecuteScalar();
@@ -39,3 +39,4 @@ namespace Veterinary
         }
     }
 }
+

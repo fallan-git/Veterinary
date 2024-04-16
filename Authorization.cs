@@ -10,8 +10,7 @@ namespace Veterinary
     internal class Authorization
     {
         static public string Role, Number, User, Password, FIO, ID;
-
-        static public void Authorization1(string login, string password)
+        static public void Authorizations(string login, string password)
         {
             try
             {

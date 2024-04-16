@@ -17,12 +17,11 @@ namespace Veterinary
             InitializeComponent();
             DBConnection.ConnectionDB();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "" && textBox2.Text != "")
             {
-                Authorization.Authorization1(textBox1.Text, textBox2.Text);
+                Authorization.Authorizations(textBox1.Text, textBox2.Text);
                 switch (Authorization.Role)
                 {
                     case null:
@@ -58,26 +57,18 @@ namespace Veterinary
                             break;
                         }
                 }
-
             }
             else
             {
                 MessageBox.Show("Заполните поля с даннными!");
             }
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormRegister f = new FormRegister();
             f.Show();
             this.Hide();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-  
-        }
-
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == '\r')

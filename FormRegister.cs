@@ -47,7 +47,7 @@ namespace Veterinary
             }
             else
             {
-                Registration.Registration1(textBox1.Text, textBox2.Text, textBox3.Text, fio);
+                Registration.Registrations(textBox1.Text, textBox2.Text, textBox3.Text, fio);
                 if (Registration.Resulting == "true")
                 {
                     this.Hide();
@@ -58,3 +58,4 @@ namespace Veterinary
         }
     }
 }
+
