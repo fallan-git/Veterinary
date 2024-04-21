@@ -30,14 +30,12 @@ namespace Veterinary
             Pets.GetPetsForRec();
             dataGridView3.DataSource = Pets.DtbPetsForRec;
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             FormUser Main = new FormUser();
             Main.Show();
             Hide();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string SelectService = dataGridView2.CurrentRow.Cells[0].Value.ToString();
@@ -67,10 +65,10 @@ namespace Veterinary
                 MessageBox.Show("Заполните все данные!", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Если у вас не доступен выбор то проигнорируйте этот пункт.\n\nДобавить питомца можно в личном кабинете.", "Выбор питомца..", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Если у вас не доступен выбор то проигнорируйте этот пункт.\n\nДобавить питомца можно в " +
+                "личном кабинете.", "Выбор питомца..", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

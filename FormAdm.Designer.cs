@@ -186,7 +186,6 @@
             this.Name = "FormAdm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Панель администратора";
-            this.Load += new System.EventHandler(this.Form_Admin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

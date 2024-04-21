@@ -21,16 +21,14 @@ namespace Veterinary
             textBox3.Text = Convert.ToString(Authorization.FIO);
             textBox4.Text = Convert.ToString(Authorization.Password);
         }
-
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
-            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
+            if (!Char.IsDigit(number) && number != 8) 
             {
                 e.Handled = true;
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "")
@@ -43,7 +41,8 @@ namespace Veterinary
             }
             else if (Encoding.UTF8.GetByteCount(textBox2.Text) != 11)
             {
-                MessageBox.Show("Номер телефона введён не в верном формате.\n\nПример: 88005553535", "Ошибка.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Номер телефона введён не в верном формате.\n\nПример: 88005553535", "Ошибка.", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -58,14 +57,12 @@ namespace Veterinary
             Main.Show();
             Hide();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             FormUsersPets Pets = new FormUsersPets();
             Pets.Show();
             Hide();
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             FormUserRecList RecList = new FormUserRecList();

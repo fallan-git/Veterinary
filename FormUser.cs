@@ -28,21 +28,18 @@ namespace Veterinary
             f3.Show();
             Hide();
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             FormLogin f1 = new FormLogin();
             f1.Show();
             Hide();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             FormUserList UsrList = new FormUserList();
             UsrList.Show();
             Hide();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             FormUserRecords fRec = new FormUserRecords();

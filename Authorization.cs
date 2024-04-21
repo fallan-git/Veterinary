@@ -14,7 +14,8 @@ namespace Veterinary
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"Select name_role from role, users WHERE login = '" + login + "' and password = '" + password + "' and users.id_role=role.id_role;";
+                DBConnection.msCommand.CommandText = @"Select name_role from role, users WHERE login = '" + login + "' " +
+                    "and password = '" + password + "' and users.id_role=role.id_role;";
                 object result = DBConnection.msCommand.ExecuteScalar();
                 if (result != null )
                 {

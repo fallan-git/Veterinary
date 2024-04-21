@@ -10,7 +10,7 @@ namespace Veterinary
 {
     internal class DBConnection
     {
-        static string DBConnect = "server = web.edu; user = 21100; password = draytr; database = 21100_vet;";
+        static string DBConnect = "server = localhost; user = root; password = draytr21100; database = 21100_vet;";
         static public MySqlDataAdapter msDataAdapter;
         static MySqlConnection myconnect;
         static public MySqlCommand msCommand;

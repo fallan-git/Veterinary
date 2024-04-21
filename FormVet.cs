@@ -21,28 +21,24 @@ namespace Veterinary
             label7.Text = Convert.ToString(Information.Grafik);
             label3.Text = Convert.ToString(Information.Number);
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             FormLogin FL = new FormLogin();
             FL.Show();
             Hide();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             FormVetInfo FVI = new FormVetInfo();
             FVI.Show();
             Hide();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             FormVetRecords FVR = new FormVetRecords();
             FVR.Show();
             Hide();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             FormVetList FVL = new FormVetList();

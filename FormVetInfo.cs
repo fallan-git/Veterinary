@@ -25,34 +25,29 @@ namespace Veterinary
             dataGridView2.Visible = false;
             dataGridView3.Visible = false;
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             FormVet FV = new FormVet();
             FV.Show();
             Hide();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             dataGridView1.Visible = false;
             dataGridView2.Visible = true;
             dataGridView3.Visible = false;
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             dataGridView1.Visible = true;
             dataGridView2.Visible = false;
             dataGridView3.Visible = false;
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             dataGridView1.Visible = false;
             dataGridView2.Visible = false;
             dataGridView3.Visible = true;
-
         }
     }
 }

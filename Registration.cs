@@ -25,10 +25,11 @@ namespace Veterinary
             {
                 try
                 {
-                    DBConnection.msCommand.CommandText = "INSERT INTO `21100_vet`.`users` (`login`, `password`, `number_phone`, `id_role`, `fio`) VALUES('" + Login + "'," +
-                        " '" + Password + "', '" + NumberPhone + "', '3', '" + FIO + "')";
+                    DBConnection.msCommand.CommandText = "INSERT INTO `21100_vet`.`users` (`login`, `password`, `number_phone`, " +
+                        "`id_role`, `fio`) VALUES('" + Login + "','" + Password + "', '" + NumberPhone + "', '3', '" + FIO + "')";
                     DBConnection.msCommand.ExecuteScalar();
-                    MessageBox.Show(Login + ", вы были успешно зарегестрированны! Зайдите в свой аккаунт.", "Успешная регистрация.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(Login + ", вы были успешно зарегестрированны! Зайдите в свой аккаунт.", "Успешная регистрация.", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Resulting = "true";
                 }
                 catch

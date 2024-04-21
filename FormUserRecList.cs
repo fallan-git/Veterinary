@@ -19,21 +19,18 @@ namespace Veterinary
             dataGridView2.DataSource = Records.DtbRecordsFromUsersCab;
             dataGridView1.DataSource = Records.DtbRecordsFromUsersCabTwo;
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             FormUserCabinet Cabinet = new FormUserCabinet();
             Cabinet.Show();
             Hide();
         }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             FormUserRecords Records = new FormUserRecords();
             Records.Show();
             Hide();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (Records.True == null)
@@ -43,7 +40,8 @@ namespace Veterinary
             else 
             {
                 string Select = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-                DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данную запись?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данную запись?", "Подтверждение", 
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (Del == DialogResult.Yes)
                 {
                     Records.DeleteRecord(Select);
@@ -52,7 +50,6 @@ namespace Veterinary
                 }
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             if (Records.TrueTwo == null)
@@ -62,7 +59,8 @@ namespace Veterinary
             else
             {
                 string Select = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данную запись?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult Del = MessageBox.Show("Вы уверенны что хотите удалить данную запись?", "Подтверждение", 
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (Del == DialogResult.Yes)
                 {
                     Records.DeleteRecord(Select);

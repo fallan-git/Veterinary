@@ -16,15 +16,18 @@ namespace Veterinary
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"SELECT `content` FROM `information` WHERE `title` = 'График работы';";
+                DBConnection.msCommand.CommandText = @"SELECT `content` FROM `information` " + 
+                    "WHERE `title` = 'График работы';";
                 object GrafikOne = DBConnection.msCommand.ExecuteScalar();
                 Grafik = Convert.ToString(GrafikOne);
 
-                DBConnection.msCommand.CommandText = @"SELECT `content` FROM `information` WHERE `title` = 'Номер телефона';";
+                DBConnection.msCommand.CommandText = @"SELECT `content` FROM `information` " + 
+                    "WHERE `title` = 'Номер телефона';";
                 object NumberOne = DBConnection.msCommand.ExecuteScalar();
                 Number = Convert.ToString(NumberOne);
 
-                DBConnection.msCommand.CommandText = @"SELECT `content` FROM `information` WHERE `title` = 'Адрес';";
+                DBConnection.msCommand.CommandText = @"SELECT `content` FROM `information` " + 
+                    "WHERE `title` = 'Адрес';";
                 object AdresOne = DBConnection.msCommand.ExecuteScalar();
                 Adres = Convert.ToString(AdresOne);
             }
@@ -51,7 +54,8 @@ namespace Veterinary
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"INSERT INTO `information` (`title`, `content`) VALUES ('" + Title + "', '" + Content + "');";
+                DBConnection.msCommand.CommandText = @"INSERT INTO `information` (`title`, `content`) " + 
+                    "VALUES ('" + Title + "', '" + Content + "');";
                 if (DBConnection.msCommand.ExecuteNonQuery() > 0)
                 {
                     return true;
@@ -72,7 +76,8 @@ namespace Veterinary
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"UPDATE `information` SET `title` = '" + Title + "', `content` = '" + Content + "' WHERE (`id_info` = '" + IdInfo + "');";
+                DBConnection.msCommand.CommandText = @"UPDATE `information` SET `title` = '" + Title + "'," + 
+                    " `content` = '" + Content + "' WHERE (`id_info` = '" + IdInfo + "');";
                 if (DBConnection.msCommand.ExecuteNonQuery() > 0)
                 {
                     return true;
@@ -92,7 +97,8 @@ namespace Veterinary
         {
             try
             {
-                DBConnection.msCommand.CommandText = @"DELETE FROM `information` WHERE (`id_info` = '" + IdInfo + "');";
+                DBConnection.msCommand.CommandText = @"DELETE FROM `information` WHERE " + 
+                    "(`id_info` = '" + IdInfo + "');";
                 DBConnection.msCommand.ExecuteNonQuery();
             }
             catch

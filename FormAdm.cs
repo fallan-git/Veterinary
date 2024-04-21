@@ -15,15 +15,14 @@ namespace Veterinary
         public FormAdm()
         {
             InitializeComponent();
+            LabelLogin.Text = Convert.ToString(Authorization.User);
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             FormLogin FL = new FormLogin();
             FL.Show();
             Hide();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             FormAdmList FAL = new FormAdmList();
@@ -37,26 +36,18 @@ namespace Veterinary
             FAI.Show();
             Hide();
         }
-
-        private void Form_Admin_Load(object sender, EventArgs e)
-        {
-            LabelLogin.Text = Convert.ToString(Authorization.User);
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             FormAdmUsers FAU = new FormAdmUsers();
             FAU.Show();
             Hide();
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
             FormAdmVet FAV = new FormAdmVet();
             FAV.Show();
             Hide();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             FormAdmRecords FAR = new FormAdmRecords();
