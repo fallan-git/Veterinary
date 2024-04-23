@@ -114,3 +114,4 @@ C:\Users\21077\Desktop\aaa\Veterinary\obj\Debug\Veterinary.csproj.Up2Date
 C:\Users\21077\Desktop\aaa\Veterinary\obj\Debug\Veterinary.exe
 C:\Users\21077\Desktop\aaa\Veterinary\obj\Debug\Veterinary.pdb
 C:\Users\Leonid\source\repos\Veterinary\Veterinary\obj\Debug\Veterinary.FormHelp.resources
+C:\Users\21100\Desktop\Veterinary\Veterinary\obj\Debug\Veterinary.FormHelp.resources
